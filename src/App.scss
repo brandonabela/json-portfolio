@@ -1,0 +1,21 @@
+$primary: #41A4F5;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    color: #434E5E;
+    background: #F7F8FA;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+@media only screen and(max-width: 991px) {
+    .container,
+    .container-fluid {
+        max-width: 100% !important;
+    }
+}
