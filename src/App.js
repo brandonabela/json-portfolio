@@ -8,7 +8,6 @@ import Navigation from './components/Navigation';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Education from './pages/Education';
-import NotFound from './pages/NotFound';
 import Portfolio from './pages/Portfolio';
 import PortfolioDetail from './pages/PortfolioDetail';
 import Skills from './pages/Skills';
@@ -17,7 +16,7 @@ import Work from './pages/Work';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <div className="App">
         <Navigation />
 
@@ -29,7 +28,6 @@ function App() {
           <Route exact path="/portfolio" component={Portfolio}></Route>
           <Route path="/portfolio/:id" component={PortfolioDetail}></Route>
           <Route path="/contact" component={Contact}></Route>
-          <Route component={NotFound}></Route>
         </Switch>
       </div>
     </BrowserRouter>
