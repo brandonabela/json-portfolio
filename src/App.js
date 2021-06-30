@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import './App.scss';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -17,7 +17,7 @@ import Work from './pages/Work';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navigation />
 
@@ -32,7 +32,7 @@ function App() {
           <Route component={NotFound}></Route>
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

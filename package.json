@@ -2,7 +2,7 @@
   "name": "brandonabela.github.io",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://brandonabela.github.io/",
+  "homepage": "https://brandonabela.github.io/brandonabela.github.io",
   "dependencies": {
     "bootstrap": "^5.0.2",
     "bootstrap-icons": "^1.5.0",
