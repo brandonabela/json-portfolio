@@ -16,7 +16,7 @@ import Work from './pages/Work';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL + '/'}>
       <div className="App">
         <Navigation />
 

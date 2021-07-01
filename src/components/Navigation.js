@@ -35,6 +35,7 @@ function Navigation() {
 
               {links.map((link, i) =>
                 <Nav.Link
+                  key={i}
                   eventKey={i}
                   as={Link}
                   to={link.path}
