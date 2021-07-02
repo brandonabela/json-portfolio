@@ -1,22 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import './App.scss';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import Navigation from './components/Navigation';
 import About from './pages/About';
-import Contact from './pages/Contact';
 import Education from './pages/Education';
+import Work from './pages/Work';
+import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
 import PortfolioDetail from './pages/PortfolioDetail';
-import Skills from './pages/Skills';
-import Work from './pages/Work';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL + '/'}>
+    <HashRouter>
       <div className="App">
         <Navigation />
 
@@ -28,9 +29,10 @@ function App() {
           <Route exact path="/portfolio" component={Portfolio}></Route>
           <Route path="/portfolio/:id" component={PortfolioDetail}></Route>
           <Route path="/contact" component={Contact}></Route>
+          <Route component={NotFound} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
