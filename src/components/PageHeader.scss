@@ -1,0 +1,15 @@
+@import "../scheme.scss";
+
+.page-heading {
+  padding: 48px 0;
+
+  color: $text-white;
+  background-color: $primary;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+
+    margin-bottom: 0;
+  }
+}

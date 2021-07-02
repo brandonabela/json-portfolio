@@ -1,11 +1,17 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import PageHeader from '../components/PageHeader';
+
 
 function PortfolioDetail({ match }) {
-    return (
-        <div>
-            <h2>Portfolio Detail Page - ID {match.params.id}</h2>
-        </div>
-    );
+  return (
+    <div>
+      <PageHeader name={"Portfolio Detail Page - ID" + match.params.id}></PageHeader>
+
+      <Container>
+      </Container>
+    </div>
+  );
 }
 
 export default PortfolioDetail;

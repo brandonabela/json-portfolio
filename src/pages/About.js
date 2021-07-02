@@ -1,12 +1,15 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import PageHeader from '../components/PageHeader';
+
 
 function About() {
   return (
     <div>
-      <h2>About Page</h2>
+      <PageHeader name="About" />
 
-      <Button variant="primary">Primary</Button>
+      <Container>
+      </Container>
     </div>
   );
 }

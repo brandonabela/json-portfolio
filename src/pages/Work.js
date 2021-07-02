@@ -1,11 +1,16 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import PageHeader from '../components/PageHeader';
 
 function Work() {
-    return (
-        <div>
-            <h2>Work Experience Page</h2>
-        </div>
-    );
+  return (
+    <div>
+      <PageHeader name="Work Experience"></PageHeader>
+
+      <Container>
+      </Container>
+    </div>
+  );
 }
 
 export default Work;

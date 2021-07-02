@@ -1,11 +1,16 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import PageHeader from '../components/PageHeader';
 
 function Portfolio() {
-    return (
-        <div>
-            <h2>Portfolio Page</h2>
-        </div>
-    );
+  return (
+    <div>
+      <PageHeader name="Portfolio"></PageHeader>
+
+      <Container>
+      </Container>
+    </div>
+  );
 }
 
 export default Portfolio;
