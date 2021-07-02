@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 
 import './Navigation.scss';
+import socials from '../data/socials.json';
 
 
 function Navigation() {
@@ -24,9 +25,24 @@ function Navigation() {
       <Navbar collapseOnSelect sticky="top" expand="lg">
         <Container>
           <Navbar.Brand>
-            <a href="https://github.com/brandonabela/"> <i className="bi bi-github"></i> </a>
-            <a href="https://www.linkedin.com/in/brandon-abela/"> <i className="bi bi-linkedin"></i> </a>
-            <a href="mailto:brandonabela9@gmail.com"> <i className="bi bi-envelope-fill"></i> </a>
+            {socials.map(social => {
+              return social.link !== "" ?
+                social.name === "email" ?
+                  < a
+                    href={"mailto:" + social.link}
+                  >
+                    <i className="bi bi-envelope-fill"></i>
+                  </a>
+                  :
+                  < a
+                    href={social.link}
+                  >
+                    <i className={"bi bi-" + social.name}></i>
+                  </a>
+                :
+                ""
+            }
+            )}
           </Navbar.Brand>
 
           <Navbar.Toggle className="bi bi-list" />
@@ -49,7 +65,7 @@ function Navigation() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </header>
+    </header >
   );
 }
 
