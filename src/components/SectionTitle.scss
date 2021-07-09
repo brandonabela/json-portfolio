@@ -1,0 +1,13 @@
+@import "../scheme.scss";
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+
+  margin-bottom: 25px;
+
+  text-decoration: underline;
+
+  text-decoration-color: $primary;
+  text-underline-offset: 8px;
+}

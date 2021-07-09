@@ -1,0 +1,57 @@
+@import "../scheme.scss";
+
+.about {
+  padding: $section-padding 0;
+
+  section {
+    padding: $section-padding 0;
+
+    p {
+      font-size: 18px;
+
+      margin-bottom: 0;
+    }
+  }
+
+  img {
+    display: block;
+
+    max-width: 260px;
+    margin: auto;
+  }
+
+  .website-intro {
+    margin: auto;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+
+      margin-bottom: 15px;
+    }
+
+    a {
+      display: inline-block;
+
+      text-decoration: none;
+
+      color: #41A4F5;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  ul {
+    display: inline-block;
+
+    margin-bottom: 0;
+    padding-top: 12px;
+
+    li {
+      list-style: circle inside;
+    }
+  }
+}

@@ -28,21 +28,20 @@ function Navigation() {
             {socials.map(social => {
               return social.link !== "" ?
                 social.name === "email" ?
-                  < a
+                  <a
                     href={"mailto:" + social.link}
                   >
                     <i className="bi bi-envelope-fill"></i>
                   </a>
                   :
-                  < a
+                  <a
                     href={social.link}
                   >
                     <i className={"bi bi-" + social.name}></i>
                   </a>
                 :
                 ""
-            }
-            )}
+            })}
           </Navbar.Brand>
 
           <Navbar.Toggle className="bi bi-list" />
