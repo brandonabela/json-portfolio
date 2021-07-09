@@ -1,0 +1,14 @@
+@import "../scheme.scss";
+
+footer {
+  background-color: $background-footer;
+
+  p {
+    font-size: 14px;
+
+    margin: 0;
+    padding: 10px 0;
+
+    color: $text-white;
+  }
+}

@@ -13,6 +13,7 @@ import Portfolio from './pages/Portfolio';
 import PortfolioDetail from './pages/PortfolioDetail';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route path="/contact" component={Contact}></Route>
           <Route component={NotFound} />
         </Switch>
+
+        <Footer />
       </div>
     </HashRouter>
   );
