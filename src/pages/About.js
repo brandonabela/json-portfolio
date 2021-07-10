@@ -17,15 +17,17 @@ function About() {
       <Container className="about">
         <section>
           <Row>
-            <Col md={4}>
-              <Image src='./images/profilePicture.png' rounded />
+            <Col sm={3}>
+              <div class="profilePicture">
+                <Image src='./images/profilePicture.png' rounded />
+              </div>
             </Col>
-            <Col md={8} className="website-intro">
+            <Col sm={9} className="website-intro">
               <h1>{profile.name}</h1>
 
               <p>
-                {profile.heading.split(/\[|]/).map((split, i) => {
-                  if (i % 2 === 1) {
+                {profile.heading.split(/\[|]/).map((split, index) => {
+                  if (index % 2 === 1) {
                     const lowerSplit = split.toLowerCase();
 
                     if (lowerSplit.includes('education')) { return <Link to='/education'> {split} </Link> }
@@ -42,33 +44,31 @@ function About() {
           </Row>
         </section>
 
-        <Row>
-          {about.map(section =>
-            <section>
-              <SectionTitle name={section.title} />
+        {about.map(section =>
+          <section>
+            <SectionTitle name={section.title} />
 
-              <p> {section.paragraph} </p>
+            <p> {section.paragraph} </p>
 
-              <Row>
-                <Col md={4}>
-                  <ul>
-                    {section.bullets.filter((_, index) => index % 3 === 0).map(bullet => <li> {bullet} </li>)}
-                  </ul>
-                </Col>
-                <Col md={4}>
-                  <ul>
-                    {section.bullets.filter((_, index) => index % 3 === 1).map(bullet => <li> {bullet} </li>)}
-                  </ul>
-                </Col>
-                <Col md={4}>
-                  <ul>
-                    {section.bullets.filter((_, index) => index % 3 === 2).map(bullet => <li> {bullet} </li>)}
-                  </ul>
-                </Col>
-              </Row>
-            </section>
-          )}
-        </Row>
+            <Row className="bullets">
+              <Col md={12} sm={4}>
+                <ul>
+                  {section.bullets.filter((_, index) => index % 3 === 0).map((bullet, index) => <li key={index}> {bullet} </li>)}
+                </ul>
+              </Col>
+              <Col md={12} sm={4}>
+                <ul>
+                  {section.bullets.filter((_, index) => index % 3 === 1).map((bullet, index) => <li key={index}> {bullet} </li>)}
+                </ul>
+              </Col>
+              <Col md={12} sm={4}>
+                <ul>
+                  {section.bullets.filter((_, index) => index % 3 === 2).map((bullet, index) => <li key={index}> {bullet} </li>)}
+                </ul>
+              </Col>
+            </Row>
+          </section>
+        )}
       </Container>
     </div>
   );
