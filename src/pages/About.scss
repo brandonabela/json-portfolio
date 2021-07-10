@@ -1,7 +1,8 @@
 @import "../scheme.scss";
 
 .about {
-  margin: $section-padding 0;
+  margin-top: $section-padding;
+  margin-bottom: $section-padding;
 
   section {
     margin: $section-padding 0;

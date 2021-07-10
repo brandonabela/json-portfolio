@@ -51,17 +51,17 @@ function About() {
             <p> {section.paragraph} </p>
 
             <Row className="bullets">
-              <Col md={12} sm={4}>
+              <Col md={4} sm={12}>
                 <ul>
                   {section.bullets.filter((_, index) => index % 3 === 0).map((bullet, index) => <li key={index}> {bullet} </li>)}
                 </ul>
               </Col>
-              <Col md={12} sm={4}>
+              <Col md={4} sm={12}>
                 <ul>
                   {section.bullets.filter((_, index) => index % 3 === 1).map((bullet, index) => <li key={index}> {bullet} </li>)}
                 </ul>
               </Col>
-              <Col md={12} sm={4}>
+              <Col md={4} sm={12}>
                 <ul>
                   {section.bullets.filter((_, index) => index % 3 === 2).map((bullet, index) => <li key={index}> {bullet} </li>)}
                 </ul>
