@@ -22,7 +22,7 @@ function Navigation() {
 
   return (
     <header>
-      <Navbar collapseOnSelect sticky="top" expand="lg">
+      <Navbar collapseOnSelect fixed="top" expand="lg">
         <Container>
           <Navbar.Brand>
             {socials.map((social, index) => {

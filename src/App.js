@@ -22,16 +22,18 @@ function App() {
       <div className="App">
         <Navigation />
 
-        <Switch>
-          <Route exact path="/" component={About}></Route>
-          <Route path="/education" component={Education}></Route>
-          <Route path="/work" component={Work}></Route>
-          <Route path="/skills" component={Skills}></Route>
-          <Route exact path="/portfolio" component={Portfolio}></Route>
-          <Route path="/portfolio/:id" component={PortfolioDetail}></Route>
-          <Route path="/contact" component={Contact}></Route>
-          <Route component={NotFound} />
-        </Switch>
+        <div className="page">
+          <Switch>
+            <Route exact path="/" component={About}></Route>
+            <Route path="/education" component={Education}></Route>
+            <Route path="/work" component={Work}></Route>
+            <Route path="/skills" component={Skills}></Route>
+            <Route exact path="/portfolio" component={Portfolio}></Route>
+            <Route path="/portfolio/:id" component={PortfolioDetail}></Route>
+            <Route path="/contact" component={Contact}></Route>
+            <Route component={NotFound} />
+          </Switch>
+        </div>
 
         <Footer />
       </div>

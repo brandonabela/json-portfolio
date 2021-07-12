@@ -18,7 +18,7 @@ function About() {
         <section>
           <Row>
             <Col sm={3}>
-              <div class="profilePicture">
+              <div className="profilePicture">
                 <Image src='./images/profilePicture.png' rounded />
               </div>
             </Col>
@@ -50,23 +50,25 @@ function About() {
 
             <p> {section.paragraph} </p>
 
-            <Row className="bullets">
-              <Col md={4} sm={12}>
-                <ul>
-                  {section.bullets.filter((_, index) => index % 3 === 0).map((bullet, index) => <li key={index}> {bullet} </li>)}
-                </ul>
-              </Col>
-              <Col md={4} sm={12}>
-                <ul>
-                  {section.bullets.filter((_, index) => index % 3 === 1).map((bullet, index) => <li key={index}> {bullet} </li>)}
-                </ul>
-              </Col>
-              <Col md={4} sm={12}>
-                <ul>
-                  {section.bullets.filter((_, index) => index % 3 === 2).map((bullet, index) => <li key={index}> {bullet} </li>)}
-                </ul>
-              </Col>
-            </Row>
+            {section.bullets.length > 0 &&
+              <Row className="bullets">
+                <Col md={4} sm={12}>
+                  <ul>
+                    {section.bullets.filter((_, index) => index % 3 === 0).map((bullet, index) => <li key={index}> {bullet} </li>)}
+                  </ul>
+                </Col>
+                <Col md={4} sm={12}>
+                  <ul>
+                    {section.bullets.filter((_, index) => index % 3 === 1).map((bullet, index) => <li key={index}> {bullet} </li>)}
+                  </ul>
+                </Col>
+                <Col md={4} sm={12}>
+                  <ul>
+                    {section.bullets.filter((_, index) => index % 3 === 2).map((bullet, index) => <li key={index}> {bullet} </li>)}
+                  </ul>
+                </Col>
+              </Row>
+            }
           </section>
         )}
       </Container>

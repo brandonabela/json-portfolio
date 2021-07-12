@@ -11,6 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.page {
+  margin-top: 52px;
+}
+
 @import "~bootstrap/scss/bootstrap";
 
 @media only screen and(max-width: 991px) {
