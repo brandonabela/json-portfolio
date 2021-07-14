@@ -23,7 +23,7 @@ function About() {
               </div>
             </Col>
             <Col sm={9} className="website-intro">
-              <h1>{profile.name}</h1>
+              <h1 className="profileName">{profile.name}</h1>
 
               <p>
                 {profile.heading.split(/\[|]/).map((split, index) => {
