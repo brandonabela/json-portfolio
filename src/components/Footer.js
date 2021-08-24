@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 
 import './Footer.scss';
-import profile from '../data/profile.json';
 
 
 function Footer() {
@@ -10,7 +9,7 @@ function Footer() {
     <footer>
       <Container>
         <Row className="text-center">
-          <p>Copyright © {new Date().getFullYear()} by {profile.name}. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} - <a href="https://github.com/brandonabela/json-portfolio">Template</a> developed by <a href="https://github.com/brandonabela">Brandon Abela</a>. All rights reserved.</p>
         </Row>
       </Container>
     </footer>

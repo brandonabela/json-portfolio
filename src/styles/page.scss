@@ -1,0 +1,98 @@
+@import "./scheme.scss";
+
+.content {
+  margin-top: $section-padding;
+
+  .section-padding {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
+
+  .light-section {
+    background-color: $background-light;
+  }
+
+  .dark-section {
+    background-color: $background-dark;
+  }
+
+  .content-gutter {
+    padding: 0 $content-gutter;
+  }
+
+  section,
+  .blue-section {
+    .btn {
+      font-size: 15px;
+      font-weight: 700;
+
+      display: table;
+
+      margin: 0 auto;
+      padding: 8px 24px;
+
+      color: #FFF !important;
+
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  section {
+    p {
+      margin-bottom: 16px;
+    }
+
+    a {
+      font-weight: 600;
+
+      display: inline-block;
+
+      text-decoration: none;
+
+      color: rgba(0, 0, 0, 0.6);
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .btn {
+      background-color: $primary;
+
+      &:hover,
+      &:focus {
+        background: $primary-dark;
+      }
+    }
+  }
+
+  .blue-section {
+    color: $text-light;
+    background-color: $primary;
+
+    .btn {
+      background-color: rgba(0, 0, 0, 0.2);
+
+      &:hover,
+      &:focus {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  .content {
+    .content-gutter {
+      padding: 0;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

@@ -1,75 +1,189 @@
-@import "../scheme.scss";
+@import "../styles/scheme.scss";
 
 .about {
-  margin-top: $section-padding;
-  margin-bottom: $section-padding;
-
-  section {
-    margin: $section-padding 0;
-
-    p {
-      font-size: 18px;
-
-      margin-bottom: 0;
-    }
-  }
-
-  .profilePicture {
-    display: block;
-
-    margin: auto;
-
-    img {
-      display: block;
-
-      max-width: 100%;
-      height: auto;
+  .profile-intro {
+    .profile-picture {
       margin: auto;
+
+      img {
+        display: block;
+
+        max-width: 100%;
+        height: auto;
+        max-height: 250px;
+        margin: auto;
+      }
+    }
+
+    .website-intro {
+      margin: auto;
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
     }
   }
 
-  .website-intro {
-    margin: auto;
+  .skills {
+    padding-top: 48px;
 
-    h1 {
-      font-size: 48px;
-      font-weight: 700;
+    .skill-item {
+      margin-bottom: 25px;
+      padding: 0 32px 24px 32px;
 
+      background-color: #FFF;
+
+      .skill-icon {
+        position: relative;
+        top: -40px;
+
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+
+        border-radius: 100%;
+        background: $primary;
+
+        i {
+          font-size: 32px;
+
+          position: relative;
+          top: calc(50% - 24px); // Center of div minus 3/4 icon size
+
+          color: $background-light;
+        }
+      }
+
+      h5 {
+        font-weight: 700;
+
+        margin: -20px 0 16px 0;
+
+        text-align: center;
+      }
+
+      ul {
+        padding: 0;
+
+        list-style: none;
+
+        li {
+          margin-bottom: 5px;
+
+          span {
+            font-weight: 700;
+
+            padding-right: 5px;
+
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .projects {
+    .card {
+      margin-bottom: 25px;
+
+      .card-img {
+        position: relative;
+
+        overflow: hidden;
+      }
+
+      .card-img-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        transition: .5s ease;
+
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      &:hover .card-img-top {
+        transition: .5s ease;
+        transform: scale(1.1);
+      }
+
+      &:hover .card-img-overlay {
+        opacity: 1;
+      }
+
+      .card-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .badge {
+        margin-right: 8px;
+
+        background-color: $text-secondary;
+      }
+    }
+  }
+
+  .contact {
+    img {
+      max-height: 100px;
       margin-bottom: 15px;
     }
 
-    a {
-      display: inline-block;
-
-      text-decoration: none;
-
-      color: #41A4F5;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-      }
+    h3 {
+      margin-bottom: 15px;
     }
-  }
 
-  .bullets {
-    padding-top: $content-padding;
-
-    ul {
-      margin-bottom: 0;
-      padding-top: 0;
-
-      li {
-        list-style: circle inside;
-      }
+    p {
+      margin-bottom: 25px;
     }
   }
 }
 
-@media only screen and(max-width: 575px) {
-  .profileName {
-    padding-top: 10px;
+@media only screen and(max-width: 768px) {
+  .about {
+    .col-sm-3,
+    .col-sm-9 {
+      width: 100%;
+    }
 
-    text-align: center;
+    .profile-intro {
+      .website-intro {
+        text-align: center;
+
+        h4 {
+          margin-top: 20px;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+
+    .skills .skill-item {
+      margin-bottom: 50px;
+      padding-right: 0;
+      padding-left: 0;
+
+      ul {
+        padding-left: 20px;
+      }
+    }
   }
 }

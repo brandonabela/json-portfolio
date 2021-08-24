@@ -1,4 +1,4 @@
-@import "../scheme.scss";
+@import "../styles/scheme.scss";
 
 .navbar {
   font-size: 14px;
@@ -18,11 +18,11 @@
       width: 36px;
       height: 36px;
       margin-right: 15px;
-      padding-top: 2px;
+      padding-top: 3px;
 
       text-align: center;
 
-      color: $text-white;
+      color: $text-light;
       border-radius: 50%;
 
       &:hover,
@@ -53,7 +53,7 @@
     a:hover,
     a:focus,
     .active {
-      color: $text-white !important;
+      color: $text-light !important;
     }
   }
 }
@@ -65,7 +65,7 @@
 
       padding: 0;
 
-      color: $text-white;
+      color: $text-light;
       border-color: transparent !important;
     }
 

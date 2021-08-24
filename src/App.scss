@@ -1,11 +1,17 @@
-@import "./scheme.scss";
+@import "./styles/scheme.scss";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./styles/page.scss";
+@import "./styles/timeline_horizontal.scss";
+@import "./styles/timeline_vertical.scss";
+@import "./styles/typography.scss";
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 
-  color: $body-color;
-  background: $background;
+  color: $text-dark;
+  background: $background-dark;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,8 +20,6 @@ body {
 .page {
   margin-top: 52px;
 }
-
-@import "~bootstrap/scss/bootstrap";
 
 @media only screen and(max-width: 991px) {
   .container,

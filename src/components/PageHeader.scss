@@ -1,9 +1,9 @@
-@import "../scheme.scss";
+@import "../styles/scheme.scss";
 
 .page-heading {
   padding: $section-padding 0;
 
-  color: $text-white;
+  color: $text-light;
   background-color: $primary;
 
   h2 {

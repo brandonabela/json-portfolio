@@ -1,4 +1,8 @@
 {
-  "name": "Brandon Abela",
-  "heading": "My [education] background consists of a M.Sc. in Machine Learning and Signal Processing and a B.Sc. in Computing Science with an interest in Software Engineering, Machine Learning and Game Development. I have worked in a range of roles varying from Front End, Research, Assistant Lecturing and Data Science highlighted in the [Work Experience]. Some of the projects I have worked on could be viewed on the [Portfolio] page using the learnt [skills]. I could be reached from the [contact]."
+  "name": "Name Surname",
+  "email": "Email",
+  "heading": "Biography Description [education], [Work Experience], [Portfolio], [skills] and [contact].",
+  "skills": "Skills Description.",
+  "projects": "Projects Description.",
+  "employers": "Employers Descriptions."
 }

@@ -1,77 +1,162 @@
 import React from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Badge, Card, Col, Container, Image, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import PageHeader from '../components/PageHeader';
 import SectionTitle from '../components/SectionTitle';
 
 import './About.scss';
-import about from '../data/about.json';
+import employers from '../data/employers.json';
 import profile from '../data/profile.json';
+import projects from '../data/projects.json';
+import skills from '../data/skills.json';
 
 
 function About() {
   return (
-    <div>
-      <PageHeader name="About" />
-
-      <Container className="about">
-        <section>
+    <div className="content about">
+      <section className='section-padding blue-section profile-intro'>
+        <Container>
           <Row>
-            <Col sm={3}>
-              <div className="profilePicture">
-                <Image src='./images/profilePicture.png' rounded />
-              </div>
+            <Col sm={3} className="profile-picture">
+              <Image src='./images/ProfilePicture.png' alt="profile-picture" rounded />
             </Col>
+
             <Col sm={9} className="website-intro">
-              <h1 className="profileName">{profile.name}</h1>
+              <h4> Hello, my name is </h4>
+              <h1> {profile.name} </h1>
 
               <p>
                 {profile.heading.split(/\[|]/).map((split, index) => {
                   if (index % 2 === 1) {
                     const lowerSplit = split.toLowerCase();
 
-                    if (lowerSplit.includes('education')) { return <Link to='/education'> {split} </Link> }
-                    else if (lowerSplit.includes('work')) { return <Link to='/work'> {split} </Link> }
-                    else if (lowerSplit.includes('skills')) { return <Link to='/skills'> {split} </Link> }
-                    else if (lowerSplit.includes('portfolio')) { return <Link to='/portfolio'> {split} </Link> }
-                    else if (lowerSplit.includes('contact')) { return <Link to='/contact'> {split} </Link> }
+                    if (lowerSplit.includes('education')) { return <Link key={index} to='/education'> {split} </Link> }
+                    else if (lowerSplit.includes('work')) { return <Link key={index} to='/work'> {split} </Link> }
+                    else if (lowerSplit.includes('skills')) { return <Link key={index} to='/skills'> {split} </Link> }
+                    else if (lowerSplit.includes('portfolio')) { return <Link key={index} to='/portfolio'> {split} </Link> }
+                    else if (lowerSplit.includes('contact')) { return <Link key={index} to='/contact'> {split} </Link> }
                   }
 
                   return split
                 })}
               </p>
+
+              <Link className="btn" role="button" to="/contact"> Contact Me </Link>
             </Col>
           </Row>
-        </section>
+        </Container>
+      </section>
 
-        {about.map(section =>
-          <section>
-            <SectionTitle name={section.title} />
+      <section className='section-padding dark-section'>
+        <Container>
+          <SectionTitle name="Skills Overview" />
 
-            <p> {section.paragraph} </p>
+          <p className="content-gutter text-center"> {profile.skills} </p>
 
-            {section.bullets.length > 0 &&
-              <Row className="bullets">
-                <Col md={4} sm={12}>
+          <Row className="justify-content-md-center skills">
+            {skills.filter(skill => skill.overview).slice(0, 3).map(skill =>
+              <Col md={4}>
+                <div className="skill-item">
+                  <div className="skill-icon text-center"> <i className={'bi ' + skill.icon}></i> </div>
+                  <h5> {skill.title} </h5>
+
                   <ul>
-                    {section.bullets.filter((_, index) => index % 3 === 0).map((bullet, index) => <li key={index}> {bullet} </li>)}
+                    {skill.languages.slice(0, 5).map(language =>
+                      <li> <span> ✔ </span>	{language} </li>
+                    )}
                   </ul>
-                </Col>
-                <Col md={4} sm={12}>
-                  <ul>
-                    {section.bullets.filter((_, index) => index % 3 === 1).map((bullet, index) => <li key={index}> {bullet} </li>)}
-                  </ul>
-                </Col>
-                <Col md={4} sm={12}>
-                  <ul>
-                    {section.bullets.filter((_, index) => index % 3 === 2).map((bullet, index) => <li key={index}> {bullet} </li>)}
-                  </ul>
-                </Col>
-              </Row>
-            }
-          </section>
-        )}
-      </Container>
+                </div>
+              </Col>
+            )}
+          </Row>
+
+          <Link className="btn" role="button" to="/skills"> View All Skills </Link>
+        </Container>
+      </section>
+
+      <section className='section-padding light-section projects'>
+        <Container>
+          <SectionTitle name="Featured Projects" />
+
+          <p className="content-gutter text-center"> {profile.projects} </p>
+
+          <Row className="justify-content-md-center text-center">
+            {projects.filter(project => project.overview).slice(0, 4).map((project) =>
+              <Col md={3} sm={6}>
+                <Card>
+                  <div className="card-img">
+                    <Card.Img
+                      variant="top"
+                      alt={project.name.toLowerCase().replaceAll(' ', '_')}
+                      src={"./images/projects/" + project.imageHeading + "01.png"}
+                    />
+
+                    <Link className="card-img-overlay btn" role="button" to={"/portfolio/" + project.name.toLowerCase().replace(/\s+/g, '-')}>
+                      <Link className="btn" role="button" to={"/portfolio/" + project.name.toLowerCase().replace(/\s+/g, '-')}>
+                        Read More
+                      </Link>
+                    </Link>
+                  </div>
+
+                  <Card.Body>
+                    <Card.Title>
+                      <Link to={"/portfolio/" + project.name.toLowerCase().replace(/\s+/g, '-')}>
+                        {project.name}
+                      </Link>
+                    </Card.Title>
+
+                    <Card.Text>
+                      {project.technologies.map(technology =>
+                        <Badge pill> {technology} </Badge>
+                      )}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            )}
+          </Row>
+
+          <Link className="btn" role="button" to="/portfolio"> View All Projects </Link>
+        </Container>
+      </section>
+
+      <section className='section-padding dark-section'>
+        <Container>
+          <SectionTitle name="Employers" />
+
+          <p className="content-gutter text-center"> {profile.employers} </p>
+
+          <Row className="justify-content-md-center">
+            {employers.slice(0, 4).map(employer =>
+              <Col md={3} sm={6} className="text-center">
+                <div className="timeline-step">
+                  <div className="inner-circle" />
+                  <p className="title"> {employer.start.substring(employer.start.lastIndexOf(" ")+1)} </p>
+                  <p> {employer.role} </p>
+                  <p> {employer.name} </p>
+                </div>
+              </Col>
+            )}
+          </Row>
+
+          <Link className="btn" role="button" to="/work"> View All Employers </Link>
+        </Container>
+      </section>
+
+      <section className="section-padding blue-section text-center contact">
+        <Container>
+          <Row>
+            <Col>
+              <Image src="./images/ProfilePicture.png" roundedCircle />
+
+              <h3> Interested in hiring me for your project? </h3>
+
+              <p className="content-gutter"> Looking for an experienced developer to develop or ship your software product? To start an initial chat, drop an email at <a href={"mailto:" + profile.email}> {profile.email} </a> or use the form on <Link to='/contact'> Contact Me </Link>. </p>
+
+              <Link className="btn" role="button" to="/contact"> Contact Me </Link>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </div>
   );
 }

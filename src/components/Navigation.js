@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 
 import './Navigation.scss';
+import profile from '../data/profile.json';
 import socials from '../data/socials.json';
 
 
@@ -27,23 +28,19 @@ function Navigation() {
           <Navbar.Brand>
             {socials.map((social, index) => {
               return social.link !== "" ?
-                social.name === "email" ?
-                  <a
-                    key={index}
-                    href={"mailto:" + social.link}
-                  >
-                    <i className="bi bi-envelope-fill"></i>
-                  </a>
-                  :
-                  <a
-                    key={index}
-                    href={social.link}
-                  >
-                    <i className={"bi bi-" + social.name}></i>
-                  </a>
+                <a
+                  key={index}
+                  href={social.link}
+                >
+                  <i className={"bi bi-" + social.name}></i>
+                </a>
                 :
                 ""
             })}
+
+            <a href={"mailto:" + profile.email}>
+              <i className="bi bi-envelope-fill"></i>
+            </a>
           </Navbar.Brand>
 
           <Navbar.Toggle className="bi bi-list" />
@@ -53,7 +50,7 @@ function Navigation() {
               {links.map((link, i) =>
                 <Nav.Link
                   key={i}
-                  eventKey={i}
+                  eventkey={i}
                   as={Link}
                   to={link.path}
                   className={splitLocation[1] === link.path.substr(1) ? "active" : ""}
