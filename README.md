@@ -26,12 +26,24 @@ A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-pag
 
 1. In ```package.json``` change ```"name": "json-portfolio"``` to ```"name": "github-username"```
 2. In ```package-lock.json``` change ```"name": "json-portfolio"``` to ```"name": "github-username"``` for both the ```root``` and ```packages```
-3. In ```public/index.html``` change ```<title> JSON Portfolio </title>``` to ```<title> Your Name | Portfolio </title>```
-4. In ```public/index.html``` change ```<meta name="description" content="..." />``` to ```<meta name="description" content="Website Description" />```
-5. Fork Repository with ```github-username.github.io``` as your repository name
-6. Modify the JSON files to reflect your details and upload any necessary images
-7. Commit the files on the forked repository
-8. In Github access the ```repository settings > pages > sources``` and select ```gh-pages``` with ```/ (root)``` folder
+3. In ```package-lock.json``` change ```"homepage": "."``` to ```"homepage": "https://github-username.github.io/"```
+4. In ```public/index.html``` change ```<title> JSON Portfolio </title>``` to ```<title> Your Name | Portfolio </title>```
+5. In ```public/index.html``` change ```<meta name="description" content="..." />``` to ```<meta name="description" content="Website Description" />```
+6. Fork Repository with ```github-username.github.io``` as your repository name
+7. Modify the JSON files to reflect your details and upload any necessary images
+8. Commit the files on the forked repository
+9. In Github access the ```repository settings > pages > sources``` and select ```gh-pages``` with ```/ (root)``` folder and then click ```save```
+
+## Template Instructions
+
+### Social Links - ```socials.json```
+
+The file ```socials.json``` consists of a predefined list of social media links where the icon is retrieved from <a href="https://icons.getbootstrap.com/" target="_blank"> Bootstrap Icons </a>. The icon is only shown when the URL link is populated, otherwise it is not shown.
+
+| **Property** |  **Description**  |
+| :----------: | :---------------: |
+|     name     | Social media name |
+|     link     | Social media link |
 
 ## Customisation
 
