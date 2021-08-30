@@ -38,7 +38,7 @@ A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-pag
 
 ### Social Links - ```socials.json```
 
-The file ```socials.json``` consists of a predefined list of social media links where the icon is retrieved from <a href="https://icons.getbootstrap.com/" target="_blank"> Bootstrap Icons </a>. The icon is only shown when the URL link is populated, otherwise it is not shown.
+The file ```socials.json``` consists of a predefined list of social media links where the icon is retrieved from <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>. The icon is only shown when the URL link is populated, otherwise it is not shown.
 
 | **Property** |  **Description**  |
 | :----------: | :---------------: |
@@ -54,4 +54,4 @@ The website customisation is primarily driven by two primary stylesheets;
 
 # Contributions
 
-Please report any issues or submit pull requests with code changes. I love it when my work helps someone.  So, if you're utilizing my project or have been inspired to develop something of your own, please let me know! My social media are featured in my <a href="http://www.brandonabela.github.io" target="_blank"> portfolio </a>.
+Please report any issues or submit pull requests with code changes. I love it when my work helps someone.  So, if you're utilizing my project or have been inspired to develop something of your own, please let me know! My social media are featured in my <a href="http://www.brandonabela.github.io" target="_blank">portfolio</a>.
