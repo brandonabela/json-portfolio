@@ -2,7 +2,7 @@
 
 A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-page portfolio site from several JSON files with a central customisation functionality and deployment pipeline.
 
-<a href="http://brandonabela.github.io/json-portfolio" target="_blank"> DEMO </a> | <a href="http://www.brandonabela.github.io" target="_blank"> My portfolio </a>
+<a href="http://brandonabela.github.io/json-portfolio" target="_blank">DEMO</a> | <a href="https://brandonabela.github.io/" target="_blank">My portfolio</a>
 
 ## Features
 
@@ -54,4 +54,4 @@ The website customisation is primarily driven by two primary stylesheets;
 
 # Contributions
 
-Please report any issues or submit pull requests with code changes. I love it when my work helps someone.  So, if you're utilizing my project or have been inspired to develop something of your own, please let me know! My social media are featured in my <a href="http://www.brandonabela.github.io" target="_blank">portfolio</a>.
+Please report any issues or submit pull requests with code changes. I love it when my work helps someone.  So, if you're utilizing my project or have been inspired to develop something of your own, please let me know! My social media are featured in my <a href="https://brandonabela.github.io/" target="_blank">portfolio</a>.
