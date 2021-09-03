@@ -1,40 +1,47 @@
 @import "./scheme.scss";
 
-.timeline-step {
-  padding: 15px 15px 25px 15px;
+.timeline-horizontal .row {
+  margin-top: 35px;
+  margin-bottom: 15px;
 
-  .inner-circle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  border-top: 5px solid #EEE;
 
-    width: 48px;
-    height: 48px;
+  .col-md-3,
+  .col-sm-6 {
+    margin-top: -13px;
 
-    border-radius: 100%;
-    background-color: $primary;
+    .date {
+      font-weight: 700;
+      padding: 5px 10px;
 
-    &::before {
-      display: inline-block;
+      color: $background-light;
+      border-radius: 5px;
+      background-color: $primary;
+    }
 
-      width: 16px;
-      height: 16px;
+    .details {
+      margin-top: 20px;
 
-      content: "";
+      .role {
+        font-weight: 700;
 
-      border-radius: 100%;
-      background-color: $background-light;
+        margin-bottom: 5px;
+      }
+
+      .name {
+        margin-bottom: 5px;
+      }
     }
   }
+}
 
-  .title {
-    font-weight: 700;
-
-    margin-top: 16px;
-    margin-bottom: 4px;
+@media only screen and(max-width: 768px) {
+  .timeline-horizontal .row {
+    border-top: none;
   }
 
-  p {
-    margin-bottom: 0 !important;
+  .col-md-3,
+  .col-sm-6 {
+    margin-top: 5px !important;
   }
 }

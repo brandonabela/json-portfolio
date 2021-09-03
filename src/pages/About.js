@@ -2,12 +2,12 @@ import React from 'react';
 import { Badge, Card, Col, Container, Image, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../components/SectionTitle';
-
-import './About.scss';
 import employers from '../data/employers.json';
 import profile from '../data/profile.json';
 import projects from '../data/projects.json';
 import skills from '../data/skills.json';
+import './About.scss';
+
 
 
 function About() {
@@ -121,22 +121,24 @@ function About() {
 
       <section className='section-padding dark-section'>
         <Container>
-          <SectionTitle name="Employers" />
+          <SectionTitle name="Experience" />
 
-          <p className="content-gutter text-center"> {profile.employers} </p>
+          <p className="content-gutter text-center"> {profile.experience} </p>
 
-          <Row className="justify-content-md-center">
-            {employers.slice(0, 4).map(employer =>
-              <Col md={3} sm={6} className="text-center">
-                <div className="timeline-step">
-                  <div className="inner-circle" />
-                  <p className="title"> {employer.start.substring(employer.start.lastIndexOf(" ")+1)} </p>
-                  <p> {employer.role} </p>
-                  <p> {employer.name} </p>
-                </div>
-              </Col>
-            )}
-          </Row>
+          <div className="timeline-horizontal">
+            <Row>
+              {employers.slice(0, 4).map(employer =>
+                <Col md={3} sm={6} className="text-center">
+                  <span class="date"> {employer.start} - {employer.end} </span>
+
+                  <div className="details">
+                    <h5 className="role"> {employer.role} </h5>
+                    <p className="name"> {employer.name} </p>
+                  </div>
+                </Col>
+              )}
+            </Row>
+          </div>
 
           <Link className="btn" role="button" to="/work"> View All Employers </Link>
         </Container>
