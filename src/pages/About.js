@@ -128,8 +128,9 @@ function About() {
           <div className="timeline-horizontal">
             <Row>
               {employers.slice(0, 4).map(employer =>
-                <Col md={3} sm={6} className="text-center">
-                  <span class="date"> {employer.start} - {employer.end} </span>
+                <Col sm={3} className="text-center">
+                  <span class="date start"> {employer.start} </span>
+                  <span class="date start-end"> {employer.start} - {employer.end} </span>
 
                   <div className="details">
                     <h5 className="role"> {employer.role} </h5>

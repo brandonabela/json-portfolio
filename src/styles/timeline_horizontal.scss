@@ -6,17 +6,22 @@
 
   border-top: 5px solid #EEE;
 
-  .col-md-3,
-  .col-sm-6 {
+  .col-sm-3 {
     margin-top: -13px;
 
-    .date {
+    .start,
+    .start-end {
       font-weight: 700;
+
       padding: 5px 10px;
 
       color: $background-light;
       border-radius: 5px;
       background-color: $primary;
+    }
+
+    .start {
+      display: none;
     }
 
     .details {
@@ -36,12 +41,15 @@
 }
 
 @media only screen and(max-width: 768px) {
-  .timeline-horizontal .row {
-    border-top: none;
-  }
+  .timeline-horizontal .row  .col-sm-3 {
+    width: 25%;
 
-  .col-md-3,
-  .col-sm-6 {
-    margin-top: 5px !important;
+    .start {
+      display: inline;
+    }
+
+    .start-end {
+      display: none;
+    }
   }
 }
