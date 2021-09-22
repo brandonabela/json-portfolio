@@ -1,19 +1,19 @@
 @import "./scheme.scss";
 
-.timeline-horizontal .row {
-  margin-top: 35px;
-  margin-bottom: 15px;
+.timeline-horizontal {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 
-  border-top: 5px solid #EEE;
+  border-top: 2px solid $line;
 
-  .col-sm-3 {
-    margin-top: -13px;
+  .timeline-item {
+    margin-top: -0.75rem;
 
     .start,
     .start-end {
       font-weight: 700;
 
-      padding: 5px 10px;
+      padding: 0.25rem 0.5rem;
 
       color: $background-light;
       border-radius: 5px;
@@ -25,23 +25,19 @@
     }
 
     .details {
-      margin-top: 20px;
+      margin-top: 1rem;
 
       .role {
         font-weight: 700;
 
-        margin-bottom: 5px;
-      }
-
-      .name {
-        margin-bottom: 5px;
+        margin-bottom: 0;
       }
     }
   }
 }
 
 @media only screen and(max-width: 768px) {
-  .timeline-horizontal .row  .col-sm-3 {
+  .timeline-horizontal .timeline-item {
     width: 25%;
 
     .start {
