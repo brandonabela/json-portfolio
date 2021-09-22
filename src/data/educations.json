@@ -11,6 +11,11 @@
       "Bullet 1B",
       "Bullet 1C",
       "Bullet 1D"
+    ],
+    "technologies": [
+      "Technologies 1A",
+      "Technologies 1B",
+      "Technologies 1C"
     ]
   },
   {
@@ -25,6 +30,9 @@
       "Bullet 2B",
       "Bullet 2C",
       "Bullet 2D"
+    ],
+    "technologies": [
+      "Technologies 2A"
     ]
   },
   {
@@ -39,7 +47,8 @@
       "Bullet 3B",
       "Bullet 3C",
       "Bullet 3D"
-    ]
+    ],
+    "technologies": []
   },
   {
     "start": "Start 4",
@@ -48,6 +57,10 @@
     "institute": "Institute 4",
     "location": "Location 4",
     "description": "Description 4",
-    "bullets": []
+    "bullets": [],
+    "technologies": [
+      "Technologies 4A",
+      "Technologies 4B"
+    ]
   }
 ]

@@ -1,2 +1,218 @@
 @import "./scheme.scss";
 
+$item-width: 92%;
+$item-shift: 8%;
+
+.timeline-vertical {
+  position: relative;
+
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+
+    content: "";
+
+    background: $line;
+  }
+
+  & > li {
+    position: relative;
+
+    width: 50%;
+    margin-right: 50%;
+    margin-bottom: 2rem;
+
+    border-radius: 5px;
+
+    &::before {
+      position: absolute;
+      top: calc(2rem + 2px);
+      right: -7.5px;
+
+      width: 15px;
+      height: 15px;
+
+      content: "";
+
+      border: 4px solid $primary;
+      border-radius: 50%;
+      background: #FFF;
+    }
+
+    .timeline-item {
+      position: relative;
+
+      width: $item-width;
+      padding: 1rem;
+
+      border: 1px solid $line;
+      background-color: #FFF;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+
+      &::before {
+        position: absolute;
+        top: 26px;
+        right: -15px;
+
+        content: "";
+
+        border-top: 15px solid transparent;
+        border-right: 0 solid $line;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $line;
+      }
+
+      &::after {
+        position: absolute;
+        top: 27px;
+        right: -14px;
+
+        display: inline-block;
+
+        content: " ";
+
+        border-top: 14px solid transparent;
+        border-right: 0 solid #FFF;
+        border-bottom: 14px solid transparent;
+        border-left: 14px solid #FFF;
+      }
+
+      .item-header {
+        margin-bottom: 0.5rem;
+
+        .title-time {
+          display: flex;
+          justify-content: space-between;
+
+          .title {
+            font-size: 1.125rem;
+            font-weight: 700;
+
+            margin-bottom: 0;
+
+            color: #434E5E;
+          }
+
+          .time {
+            font-size: 0.875rem;
+            font-weight: 500;
+
+            color: #58677C;
+          }
+        }
+      }
+
+      .location {
+        font-size: 0.875rem;
+
+        color: #AAB4C3;
+      }
+
+      .description {
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+
+        list-style-type: disc;
+      }
+
+      .two-column-bullets {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .technologies {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .badge-pill {
+        background-color: #58677c;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .inverted {
+    margin-left: 50%;
+
+    &::before {
+      left: -7.5px;
+    }
+
+    .timeline-item {
+      margin-left: $item-shift;
+
+      &::before {
+        right: auto;
+        left: -15px;
+
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+
+      &::after {
+        right: auto;
+        left: -14px;
+
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 991px) {
+  .timeline-vertical {
+    &::before {
+      left: 2%;
+    }
+
+    & > li {
+      width: 100%;
+      margin-right: 0;
+
+      .timeline-item {
+        width: $item-width;
+        margin-left: $item-shift;
+
+        &::before {
+          right: auto;
+          left: -15px;
+
+          border-right-width: 15px;
+          border-left-width: 0;
+        }
+
+        &::after {
+          right: auto;
+          left: -14px;
+
+          border-right-width: 14px;
+          border-left-width: 0;
+        }
+      }
+    }
+
+    .inverted {
+      margin-left: 0;
+    }
+
+    li::before,
+    .inverted::before {
+      left: calc(2% - 7.5px);
+    }
+  }
+}
