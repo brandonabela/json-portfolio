@@ -3,7 +3,7 @@ import { Badge, Card, Col, Container, Image, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import SectionTitle from '../components/SectionTitle';
-import employers from '../data/employers.json';
+import experiences from '../data/experiences.json';
 import profile from '../data/profile.json';
 import projects from '../data/projects.json';
 import skills from '../data/skills.json';
@@ -127,14 +127,14 @@ function About() {
           <p className="content-gutter text-center"> {profile.experience} </p>
 
           <Row className="timeline-horizontal">
-            {employers.slice(0, 4).map(employer =>
+            {experiences.slice(0, 4).map(experience =>
               <Col sm={3} className="timeline-item text-center">
-                <span class="start"> {employer.start} </span>
-                <span class="start-end"> {employer.start} - {employer.end} </span>
+                <span class="start"> {experience.start} </span>
+                <span class="start-end"> {experience.start} - {experience.end} </span>
 
                 <div className="details">
-                  <h5 className="role"> {employer.role} </h5>
-                  <p className="name"> {employer.name} </p>
+                  <h5 className="role"> {experience.role} </h5>
+                  <p className="name"> {experience.name} </p>
                 </div>
               </Col>
             )}
