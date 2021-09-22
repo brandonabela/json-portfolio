@@ -31,7 +31,7 @@ function Work() {
                 }
 
                 {experience.bullets.length > 0 &&
-                  <ul className={(Math.max(...experience.bullets.map(x => x.split().length)) > 20 ? "" : "two-column-bullets")}>
+                  <ul className={(Math.max(...experience.bullets.map(x => x.split('').length)) > 40 ? "" : "two-column-bullets")}>
                     {experience.bullets.map((bullet, index) =>
                       <li key={index}>
                         {bullet}
