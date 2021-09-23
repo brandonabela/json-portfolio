@@ -36,14 +36,55 @@ A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-pag
 
 ## Template Instructions
 
+This section covers every JSON file that is used by the website to generate the portfolio website. The number of entries in ```educations.json``` and ```educations.json``` can be adjusted as long as the same structure is kept.
+
 ### Social Links - ```socials.json```
 
-The file ```socials.json``` consists of a predefined list of social media links where the icon is retrieved from <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>. The icon is only shown when the URL link is populated, otherwise it is not shown.
+The ```socials.json``` file consists of a predefined list of social media links where the icon is retrieved from <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>. The icon is only shown when the URL link is populated, otherwise it is not shown.
 
 | **Property** |  **Description**  |
 | :----------: | :---------------: |
 |     name     | Social media name |
 |     link     | Social media link |
+
+### Profile - ```profile.json```
+
+The ```profile.json``` file is used to populate the about page and certain details are also shared to other pages. The biography description is used to provide an introduction to the portfolio with the support of links through the use of square brackets, which supports the **education**, **work**, **skills**, **portfolio** and **contact**.
+
+| **Property** |    **Description**     | **Required** |
+| :----------: | :--------------------: | :----------: |
+|     name     |       Full name        |      ✔️       |
+|    email     |     Email Address      |      ✔️       |
+|   heading    | Biography Description  |      ✔️       |
+|    skills    |   Skills Description   |      ✔️       |
+|   projects   |  Projects Description  |      ✔️       |
+|  experience  | Experience Description |      ✔️       |
+
+### Education - ```educations.json```
+
+| **Property** |   **Description**    | **Required** |
+| :----------: | :------------------: | :----------: |
+|    start     |      Start Date      |      ✔️       |
+|     end      |       End Date       |      ✔️       |
+|    course    |   Attended Course    |      ✔️       |
+|  institute   |   Institution Name   |      ✔️       |
+|   location   | Institution Location |      ✔️       |
+| description  |  Course Description  |      ❌       |
+|   bullets    |  Course Highlights   |      ❌       |
+| technologies |  Technologies Used   |      ❌       |
+
+### Experience - ```experiences.json```
+
+| **Property** |    **Description**     | **Required** |
+| :----------: | :--------------------: | :----------: |
+|    start     |       Start Date       |      ✔️       |
+|     end      |        End Date        |      ✔️       |
+|     role     |       Role Title       |      ✔️       |
+|   company    |    Employed Company    |      ✔️       |
+|   location   |  Institution Location  |      ✔️       |
+| description  | Employment Description |      ❌       |
+|   bullets    | Employment Highlights  |      ❌       |
+| technologies |   Technologies Used    |      ❌       |
 
 ## Customisation
 
