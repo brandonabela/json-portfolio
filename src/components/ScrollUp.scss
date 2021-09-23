@@ -1,0 +1,18 @@
+@import "../styles/scheme.scss";
+
+.scrollUp {
+  position: fixed;
+  z-index: 15;
+  right: 2rem;
+  bottom: 2rem;
+
+  border-color: $scroll-btn;
+  border-radius: 0.25rem;
+  background-color: $scroll-btn;
+
+  i {
+    font-size: 1.25rem;
+
+    color: $text-light;
+  }
+}
