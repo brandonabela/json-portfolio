@@ -127,13 +127,13 @@ function About() {
 
           <Row className="timeline-horizontal">
             {experiences.slice(0, 4).map((experience, e_index) =>
-              <Col sm={3} className="timeline-item text-center" key={e_index}>
+              <Col md={3} className="timeline-item text-center" key={e_index}>
                 <span className="start"> {experience.start} </span>
                 <span className="start-end"> {experience.start} - {experience.end} </span>
 
                 <div className="details">
                   <h5 className="role"> {experience.role} </h5>
-                  <p className="name"> {experience.name} </p>
+                  <p className="company"> {experience.company} </p>
                 </div>
               </Col>
             )}
