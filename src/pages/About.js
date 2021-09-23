@@ -53,15 +53,15 @@ function About() {
           <p className="content-gutter text-center"> {profile.skills} </p>
 
           <Row className="justify-content-md-center skills">
-            {skills.filter(skill => skill.overview).slice(0, 3).map(skill =>
-              <Col md={4}>
+            {skills.filter(skill => skill.overview).slice(0, 3).map((skill, s_index) =>
+              <Col md={4} key={s_index}>
                 <div className="skill-item">
                   <div className="skill-icon text-center"> <i className={'bi ' + skill.icon}></i> </div>
                   <h5> {skill.title} </h5>
 
                   <ul>
-                    {skill.languages.slice(0, 5).map(language =>
-                      <li> <span> ✔ </span>	{language} </li>
+                    {skill.languages.slice(0, 5).map((language, l_index) =>
+                      <li key={l_index}> <span> ✔ </span>	{language} </li>
                     )}
                   </ul>
                 </div>
@@ -80,8 +80,8 @@ function About() {
           <p className="content-gutter text-center"> {profile.projects} </p>
 
           <Row className="justify-content-md-center text-center">
-            {projects.filter(project => project.overview).slice(0, 4).map((project) =>
-              <Col md={3} sm={6}>
+            {projects.filter(project => project.overview).slice(0, 4).map((project, p_index) =>
+              <Col md={3} sm={6} key={p_index}>
                 <Card>
                   <div className="card-img">
                     <Card.Img
@@ -105,8 +105,8 @@ function About() {
                     </Card.Title>
 
                     <Card.Text>
-                      {project.technologies.map(technology =>
-                        <Badge pill> {technology} </Badge>
+                      {project.technologies.map((technology, t_index) =>
+                        <Badge pill key={t_index}> {technology} </Badge>
                       )}
                     </Card.Text>
                   </Card.Body>
@@ -126,8 +126,8 @@ function About() {
           <p className="content-gutter text-center"> {profile.experience} </p>
 
           <Row className="timeline-horizontal">
-            {experiences.slice(0, 4).map(experience =>
-              <Col sm={3} className="timeline-item text-center">
+            {experiences.slice(0, 4).map((experience, e_index) =>
+              <Col sm={3} className="timeline-item text-center" key={e_index}>
                 <span className="start"> {experience.start} </span>
                 <span className="start-end"> {experience.start} - {experience.end} </span>
 
