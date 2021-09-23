@@ -5,6 +5,7 @@ import PageHeader from '../components/PageHeader';
 import './Education.scss';
 import educations from '../data/educations.json';
 
+
 function Education() {
   return (
     <div className="education content">
@@ -34,6 +35,7 @@ function Education() {
                   <ul className={(Math.max(...education.bullets.map(x => x.split('').length)) > 40 ? "" : "two-column-bullets")}>
                     {education.bullets.map((bullet, index) =>
                       <li key={index}>
+                        <span> ✔ </span>
                         {bullet}
                       </li>
                     )}

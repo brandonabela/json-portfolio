@@ -5,6 +5,7 @@ import PageHeader from '../components/PageHeader';
 import './Work.scss';
 import experiences from '../data/experiences.json';
 
+
 function Work() {
   return (
     <div className="work content">
@@ -34,6 +35,7 @@ function Work() {
                   <ul className={(Math.max(...experience.bullets.map(x => x.split('').length)) > 40 ? "" : "two-column-bullets")}>
                     {experience.bullets.map((bullet, index) =>
                       <li key={index}>
+                        <span> ✔ </span>
                         {bullet}
                       </li>
                     )}

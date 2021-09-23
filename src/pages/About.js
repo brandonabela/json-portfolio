@@ -10,7 +10,6 @@ import skills from '../data/skills.json';
 import './About.scss';
 
 
-
 function About() {
   return (
     <div className="content about">
@@ -129,8 +128,8 @@ function About() {
           <Row className="timeline-horizontal">
             {experiences.slice(0, 4).map(experience =>
               <Col sm={3} className="timeline-item text-center">
-                <span class="start"> {experience.start} </span>
-                <span class="start-end"> {experience.start} - {experience.end} </span>
+                <span className="start"> {experience.start} </span>
+                <span className="start-end"> {experience.start} - {experience.end} </span>
 
                 <div className="details">
                   <h5 className="role"> {experience.role} </h5>

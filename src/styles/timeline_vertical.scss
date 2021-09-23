@@ -121,10 +121,15 @@ $item-shift: 8%;
       }
 
       ul {
-        margin-bottom: 1rem;
-        padding-left: 2rem;
+        margin-bottom: 0.5rem;
 
-        list-style-type: disc;
+        span {
+          font-weight: 700;
+
+          padding: 0 0.25rem;
+
+          color: $text-dark;
+        }
       }
 
       .two-column-bullets {
@@ -139,8 +144,9 @@ $item-shift: 8%;
       }
 
       .badge-pill {
-        background-color: #58677c;
         margin-right: 0.5rem;
+
+        background-color: #58677c;
       }
     }
   }

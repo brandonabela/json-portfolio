@@ -2,8 +2,8 @@
   {
     "start": "Start 1",
     "end": "End 1",
-    "company": "Employers 1",
     "role": "Role 1",
+    "company": "Employers 1",
     "location": "Location 1",
     "description": "Description 1",
     "bullets": [
@@ -20,8 +20,8 @@
   {
     "start": "Start 2",
     "end": "End 2",
-    "company": "Employers 2",
     "role": "Role 2",
+    "company": "Employers 2",
     "location": "Location 2",
     "description": "Description 2",
     "bullets": [
@@ -40,8 +40,8 @@
   {
     "start": "Start 3",
     "end": "End 3",
-    "company": "Employers 3",
     "role": "Role 3",
+    "company": "Employers 3",
     "location": "Location 3",
     "description": "Description 3",
     "bullets": [
@@ -55,8 +55,8 @@
   {
     "start": "Start 4",
     "end": "End 4",
-    "company": "Employers 4",
     "role": "Role 4",
+    "company": "Employers 4",
     "location": "Location 4",
     "description": "Description 4",
     "bullets": [],
