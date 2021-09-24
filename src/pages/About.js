@@ -2,12 +2,12 @@ import React from 'react';
 import { Badge, Card, Col, Container, Image, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import './About.scss';
 import SectionTitle from '../components/SectionTitle';
 import experiences from '../data/experiences.json';
 import profile from '../data/profile.json';
 import projects from '../data/projects.json';
 import skills from '../data/skills.json';
-import './About.scss';
 
 
 function About() {
@@ -56,12 +56,15 @@ function About() {
             {skills.filter(skill => skill.overview).slice(0, 3).map((skill, s_index) =>
               <Col md={4} key={s_index}>
                 <div className="skill-item">
-                  <div className="skill-icon text-center"> <i className={'bi ' + skill.icon}></i> </div>
-                  <h5> {skill.title} </h5>
+                  {skill.icon &&
+                    <div className="skill-icon text-center"> <i className={'bi ' + skill.icon}></i> </div>
+                  }
+
+                  <h5 style={{ marginTop: skill.icon ? '-2rem' : '0' }}> {skill.title} </h5>
 
                   <ul>
-                    {skill.languages.slice(0, 5).map((language, l_index) =>
-                      <li key={l_index}> <span> ✔ </span>	{language} </li>
+                    {skill.skills.slice(0, 5).map((skill, s_index) =>
+                      <li key={s_index}> <span> ✔ </span> {skill} </li>
                     )}
                   </ul>
                 </div>

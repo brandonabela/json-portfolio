@@ -25,17 +25,17 @@
   }
 
   .skills {
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
 
     .skill-item {
       margin-bottom: 1rem;
-      padding: 0 2rem 1rem 2rem;
+      padding: 1rem 2rem;
 
       background-color: #FFF;
 
       .skill-icon {
         position: relative;
-        top: -40px;
+        top: -55px;
 
         width: 80px;
         height: 80px;
@@ -56,8 +56,6 @@
 
       h5 {
         font-weight: 700;
-
-        margin-top: -1rem;
 
         text-align: center;
       }
@@ -125,12 +123,6 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 1.2;
-      }
-
-      .badge {
-        margin-right: 0.5rem;
-
-        background-color: $text-secondary;
       }
     }
   }

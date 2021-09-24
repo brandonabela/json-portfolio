@@ -6,9 +6,6 @@ $item-shift: 8%;
 .timeline-vertical {
   position: relative;
 
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-
   &::before {
     position: absolute;
     left: 50%;
@@ -105,7 +102,7 @@ $item-shift: 8%;
             font-size: 0.875rem;
             font-weight: 500;
 
-            color: #58677C;
+            color: $text-secondary;
           }
         }
       }
@@ -141,12 +138,6 @@ $item-shift: 8%;
       .technologies {
         font-size: 1rem;
         font-weight: 700;
-      }
-
-      .badge-pill {
-        margin-right: 0.5rem;
-
-        background-color: #58677c;
       }
     }
   }
