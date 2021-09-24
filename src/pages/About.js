@@ -108,8 +108,8 @@ function About() {
                     </Card.Title>
 
                     <Card.Text>
-                      {project.technologies.map((technology, t_index) =>
-                        <Badge pill key={t_index}> {technology} </Badge>
+                      {project.skills.map((skill, s_index) =>
+                        <Badge pill key={s_index}> {skill} </Badge>
                       )}
                     </Card.Text>
                   </Card.Body>

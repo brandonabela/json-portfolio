@@ -4,7 +4,7 @@
     "description": [
       "Description 1."
     ],
-    "technologies": [
+    "skills": [
       "Technologies 1A",
       "Technologies 1B",
       "Technologies 1C"
@@ -18,7 +18,7 @@
     "description": [
       "Description 2."
     ],
-    "technologies": [
+    "skills": [
       "Technologies 2A"
     ],
     "images": 1,
@@ -30,7 +30,7 @@
     "description": [
       "Description 3."
     ],
-    "technologies": [
+    "skills": [
       "Technologies 3A",
       "Technologies 3B",
       "Technologies 3C",
@@ -45,7 +45,7 @@
     "description": [
       "Description 4."
     ],
-    "technologies": [
+    "skills": [
       "Technologies 4A",
       "Technologies 4B"
     ],
