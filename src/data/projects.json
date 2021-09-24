@@ -5,9 +5,9 @@
       "Description 1."
     ],
     "skills": [
-      "Technologies 1A",
-      "Technologies 1B",
-      "Technologies 1C"
+      "Skills 1A",
+      "Skills 1B",
+      "Skills 1C"
     ],
     "images": 1,
     "imageHeading": "Project",
@@ -19,7 +19,7 @@
       "Description 2."
     ],
     "skills": [
-      "Technologies 2A"
+      "Skills 2A"
     ],
     "images": 1,
     "imageHeading": "Project",
@@ -31,10 +31,10 @@
       "Description 3."
     ],
     "skills": [
-      "Technologies 3A",
-      "Technologies 3B",
-      "Technologies 3C",
-      "Technologies 3D"
+      "Skills 3A",
+      "Skills 3B",
+      "Skills 3C",
+      "Skills 3D"
     ],
     "images": 1,
     "imageHeading": "Project",
@@ -46,8 +46,8 @@
       "Description 4."
     ],
     "skills": [
-      "Technologies 4A",
-      "Technologies 4B"
+      "Skills 4A",
+      "Skills 4B"
     ],
     "images": 1,
     "imageHeading": "Project",
