@@ -84,7 +84,16 @@ The ```profile.json``` file is used to populate the about page and certain detai
 |   location   |  Institution Location  |      ✔️       |
 | description  | Employment Description |      ❌       |
 |   bullets    | Employment Highlights  |      ❌       |
-| technologies |   Technologies Used    |      ❌       |
+|    skills    |      Skills Used       |      ❌       |
+
+### Experience - ```skills.json```
+
+| **Property** |  **Description**   | **Required** |
+| :----------: | :----------------: | :----------: |
+|    title     |  Skill Group Name  |      ✔️       |
+|     icon     |  Skill Group Icon  |      ✔️       |
+|   overview   | Show in About Page |      ✔️       |
+|    skills    |       Skills       |      ✔️       |
 
 ## Customisation
 
