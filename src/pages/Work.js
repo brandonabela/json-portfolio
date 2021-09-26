@@ -32,15 +32,20 @@ function Work() {
                     <p className="description"> {experience.description} </p>
                   }
 
+                  {(experience.bullets.length > 0 || experience.technologies.length > 0) &&
+                    <div className="item-spacer" />
+                  }
+
                   {experience.bullets.length > 0 &&
-                    <ul className={(Math.max(...experience.bullets.map(x => x.split('').length)) > 40 ? "" : "two-column-bullets")}>
+                    <ul className={(Math.max(...experience.bullets.map(x => x.length)) > 40 ? "" : "two-column-bullets")}>
                       {experience.bullets.map((bullet, index) =>
-                        <li key={index}>
-                          <span> ✔ </span>
-                          {bullet}
-                        </li>
+                        <li key={index}> <span> ✔ </span> {bullet} </li>
                       )}
                     </ul>
+                  }
+
+                  {experience.technologies.length > 0 &&
+                    <div className="item-spacer" />
                   }
 
                   {experience.technologies.length > 0 && experience.technologies.map((technology, index) =>

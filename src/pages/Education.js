@@ -32,15 +32,20 @@ function Education() {
                     <p className="description"> {education.description} </p>
                   }
 
+                  {(education.bullets.length > 0 || education.technologies.length > 0) &&
+                    <div className="item-spacer" />
+                  }
+
                   {education.bullets.length > 0 &&
-                    <ul className={(Math.max(...education.bullets.map(x => x.split('').length)) > 40 ? "" : "two-column-bullets")}>
+                    <ul className={(Math.max(...education.bullets.map(x => x.length)) > 40 ? "" : "two-column-bullets")}>
                       {education.bullets.map((bullet, index) =>
-                        <li key={index}>
-                          <span> ✔ </span>
-                          {bullet}
-                        </li>
+                        <li key={index}> <span> ✔ </span> {bullet} </li>
                       )}
                     </ul>
+                  }
+
+                  {education.technologies.length > 0 &&
+                    <div className="item-spacer" />
                   }
 
                   {education.technologies.length > 0 && education.technologies.map((technology, index) =>

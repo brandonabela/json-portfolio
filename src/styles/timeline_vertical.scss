@@ -85,6 +85,10 @@ $item-shift: 8%;
       .item-header {
         margin-bottom: 0.5rem;
 
+        .item-spacer {
+          margin-bottom: 0.5rem;
+        }
+
         .title-time {
           display: flex;
           justify-content: space-between;
@@ -114,11 +118,11 @@ $item-shift: 8%;
       }
 
       .description {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
       }
 
       ul {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
 
         span {
           font-weight: 700;
