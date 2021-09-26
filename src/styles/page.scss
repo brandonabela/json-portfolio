@@ -17,8 +17,8 @@
   }
 
   .content-gutter {
-    padding: 0 $content-gutter;
     margin-bottom: 3rem;
+    padding: 0 $content-gutter;
   }
 
   section,
@@ -42,6 +42,8 @@
 
     .badge {
       margin-right: 0.75rem;
+      margin-bottom: 0.25rem;
+
       background-color: $text-secondary;
     }
   }
