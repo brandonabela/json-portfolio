@@ -171,7 +171,7 @@ $item-shift: 8%;
   }
 }
 
-@media only screen and(max-width: 991px) {
+@media only screen and(max-width: 1024px) {
   .timeline-vertical {
     &::before {
       left: 2%;
