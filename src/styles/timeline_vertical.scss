@@ -82,12 +82,12 @@ $item-shift: 8%;
         border-left: 14px solid #FFF;
       }
 
-      .item-header {
-        margin-bottom: 0.5rem;
+      .item-spacer {
+        padding-bottom: 0.5rem;
+      }
 
-        .item-spacer {
-          margin-bottom: 0.5rem;
-        }
+      .item-header {
+        margin-bottom: 0.75rem;
 
         .title-time {
           display: flex;

@@ -32,7 +32,7 @@ function Work() {
                     <p className="description"> {experience.description} </p>
                   }
 
-                  {(experience.bullets.length > 0 || experience.technologies.length > 0) &&
+                  {experience.bullets.length > 0 &&
                     <div className="item-spacer" />
                   }
 
@@ -52,6 +52,7 @@ function Work() {
                     <Badge pill key={index}> {technology} </Badge>
                   )}
                 </div>
+
               </li>
             )}
           </ul>

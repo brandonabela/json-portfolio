@@ -32,7 +32,7 @@ function Education() {
                     <p className="description"> {education.description} </p>
                   }
 
-                  {(education.bullets.length > 0 || education.technologies.length > 0) &&
+                  {education.bullets.length > 0 &&
                     <div className="item-spacer" />
                   }
 
@@ -52,6 +52,7 @@ function Education() {
                     <Badge pill key={index}> {technology} </Badge>
                   )}
                 </div>
+
               </li>
             )}
           </ul>
