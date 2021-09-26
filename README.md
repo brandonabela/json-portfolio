@@ -86,7 +86,7 @@ The ```profile.json``` file is used to populate the about page and certain detai
 |   bullets    | Employment Highlights  |      ❌       |
 |    skills    |      Skills Used       |      ❌       |
 
-### Experience - ```skills.json```
+### Skills - ```skills.json```
 
 | **Property** |  **Description**   | **Required** |
 | :----------: | :----------------: | :----------: |
