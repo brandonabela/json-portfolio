@@ -1,0 +1,54 @@
+@import "../styles/scheme.scss";
+
+.skill-item {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+
+  background-color: #FFF;
+
+  .skill-icon {
+    position: relative;
+    top: -55px;
+
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+
+    border-radius: 100%;
+    background: $primary;
+
+    i {
+      font-size: 32px;
+
+      position: relative;
+      top: calc(50% - 24px); // Center of div minus 3/4 icon size
+
+      color: $background-light;
+    }
+  }
+
+  h5 {
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      margin-bottom: 0.25rem;
+
+      span {
+        font-weight: 700;
+
+        padding-right: 0.25rem;
+
+        color: $primary;
+      }
+    }
+  }
+}
