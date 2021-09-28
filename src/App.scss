@@ -1,11 +1,12 @@
-@import "./styles/scheme.scss";
+@import "./styles/Scheme.scss";
 @import "~bootstrap/scss/bootstrap";
 
-@import "./styles/page.scss";
-@import "./styles/skill_item.scss";
-@import "./styles/timeline_horizontal.scss";
-@import "./styles/timeline_vertical.scss";
-@import "./styles/typography.scss";
+@import "./styles/Page.scss";
+@import "./styles/SkillItem.scss";
+@import "./styles/ProjectItem.scss";
+@import "./styles/TimelineHorizontal.scss";
+@import "./styles/TimelineVertical.scss";
+@import "./styles/Typography.scss";
 
 body {
   font-family: 'Roboto', sans-serif;

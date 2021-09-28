@@ -1,9 +1,8 @@
 import React from 'react';
 import { Badge, Container } from 'react-bootstrap';
-import PageHeader from '../components/PageHeader';
 
-import './Education.scss';
 import educations from '../data/educations.json';
+import PageHeader from '../components/PageHeader';
 
 
 function Education() {

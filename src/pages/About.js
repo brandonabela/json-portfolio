@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Card, Col, Container, Image, Row } from 'react-bootstrap';
+import { Badge, Button, Card, Col, Container, Image, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import './About.scss';
@@ -16,11 +16,11 @@ function About() {
       <section className='section-padding blue-section profile-intro'>
         <Container>
           <Row>
-            <Col sm={3} className="profile-picture">
+            <Col md={3} sm={12} className="profile-picture">
               <Image src='./images/ProfilePicture.png' alt="profile-picture" rounded />
             </Col>
 
-            <Col sm={9} className="website-intro">
+            <Col md={9} sm={12} className="website-intro">
               <h4> Hello, my name is </h4>
               <h1> {profile.name} </h1>
 
@@ -72,11 +72,12 @@ function About() {
             )}
           </Row>
 
+          <div className="spacer" />
           <Link className="btn" role="button" to="/skills"> View All Skills </Link>
         </Container>
       </section>
 
-      <section className='section-padding light-section projects'>
+      <section className='section-padding light-section'>
         <Container>
           <SectionTitle name="Featured Projects" />
 
@@ -94,9 +95,9 @@ function About() {
                     />
 
                     <Link className="card-img-overlay btn" role="button" to={"/portfolio/" + project.name.toLowerCase().replace(/\s+/g, '-')}>
-                      <Link className="btn" role="button" to={"/portfolio/" + project.name.toLowerCase().replace(/\s+/g, '-')}>
+                      <Button role="button">
                         Read More
-                      </Link>
+                      </Button>
                     </Link>
                   </div>
 
@@ -118,6 +119,7 @@ function About() {
             )}
           </Row>
 
+          <div className="spacer" />
           <Link className="btn" role="button" to="/portfolio"> View All Projects </Link>
         </Container>
       </section>
@@ -131,34 +133,32 @@ function About() {
           <Row className="timeline-horizontal">
             {experiences.slice(0, 4).map((experience, e_index) =>
               <Col md={3} className="timeline-item text-center" key={e_index}>
-                <span className="start"> {experience.start} </span>
-                <span className="start-end"> {experience.start} - {experience.end} </span>
+                <span className="date-short"> {experience.end} </span>
+                <span className="date-full"> {experience.start} - {experience.end} </span>
 
                 <div className="details">
-                  <h5 className="role"> {experience.role} </h5>
-                  <p className="company"> {experience.company} </p>
+                  <h5 className="title"> {experience.role} </h5>
+                  <p className="description"> {experience.company} </p>
                 </div>
               </Col>
             )}
           </Row>
 
+          <div className="spacer" />
           <Link className="btn" role="button" to="/work"> View All Employers </Link>
         </Container>
       </section>
 
       <section className="section-padding blue-section text-center contact">
         <Container>
-          <Row>
-            <Col>
-              <Image src="./images/ProfilePicture.png" roundedCircle />
+          <Image src="./images/ProfilePicture.png" roundedCircle />
 
-              <h3> Interested in hiring me for your project? </h3>
+          <h3> Interested in hiring me for your project? </h3>
 
-              <p className="content-gutter"> Looking for an experienced developer to develop or ship your software product? To start an initial chat, drop an email at <a href={"mailto:" + profile.email}> {profile.email} </a> or use the form on <Link to='/contact'> Contact Me </Link>. </p>
+          <p className="content-gutter"> Looking for an experienced developer to develop or ship your software product? To start an initial chat, drop an email at <a href={"mailto:" + profile.email}> {profile.email} </a> or use the form on <Link to='/contact'> Contact Me </Link>. </p>
 
-              <Link className="btn" role="button" to="/contact"> Contact Me </Link>
-            </Col>
-          </Row>
+          <div className="spacer" />
+          <Link className="btn" role="button" to="/contact"> Contact Me </Link>
         </Container>
       </section>
     </div>

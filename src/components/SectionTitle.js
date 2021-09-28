@@ -7,7 +7,7 @@ import './SectionTitle.scss';
 function SectionTitle(props) {
   return (
     <Row>
-      <div className="section-title text-center"> {props.name} </div>
+      <h3 className="section-title text-center"> {props.name} </h3>
     </Row>
   );
 }

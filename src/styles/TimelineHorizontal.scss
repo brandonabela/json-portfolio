@@ -9,8 +9,8 @@
   .timeline-item {
     margin-top: -0.75rem;
 
-    .start,
-    .start-end {
+    .date-short,
+    .date-full {
       font-weight: 700;
 
       padding: 0.25rem 0.5rem;
@@ -20,16 +20,20 @@
       background-color: $primary;
     }
 
-    .start {
+    .date-short {
       display: none;
     }
 
     .details {
       margin-top: 1rem;
 
-      .role {
+      .title {
         font-weight: 700;
 
+        margin-bottom: 0;
+      }
+
+      .description {
         margin-bottom: 0;
       }
     }
@@ -40,11 +44,11 @@
   .timeline-horizontal .timeline-item {
     width: 25%;
 
-    .start {
+    .date-short {
       display: inline;
     }
 
-    .start-end {
+    .date-full {
       display: none;
     }
   }

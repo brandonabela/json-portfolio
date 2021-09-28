@@ -1,9 +1,8 @@
 import React from 'react';
 import { Badge, Container } from 'react-bootstrap';
-import PageHeader from '../components/PageHeader';
 
-import './Work.scss';
 import experiences from '../data/experiences.json';
+import PageHeader from '../components/PageHeader';
 
 
 function Work() {

@@ -1,4 +1,4 @@
-@import "../styles/scheme.scss";
+@import "../styles/Scheme.scss";
 
 .about {
   .profile-intro {
@@ -24,53 +24,6 @@
     }
   }
 
-  .projects {
-    .card {
-      margin-bottom: 1rem;
-
-      .card-img {
-        position: relative;
-
-        overflow: hidden;
-      }
-
-      .card-img-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-
-        transition: .5s ease;
-
-        opacity: 0;
-        background: rgba(0, 0, 0, 0.5);
-      }
-
-      &:hover .card-img-top {
-        transition: .5s ease;
-        transform: scale(1.1);
-      }
-
-      &:hover .card-img-overlay {
-        opacity: 1;
-      }
-
-      .card-title {
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.2;
-      }
-    }
-  }
-
   .contact {
     img {
       max-height: 100px;
@@ -89,32 +42,17 @@
 
 @media only screen and(max-width: 768px) {
   .about {
-    .col-sm-3,
-    .col-sm-9 {
-      width: 100%;
-    }
-
     .profile-intro {
       .website-intro {
         text-align: center;
 
         h4 {
-          margin-top: 20px;
+          margin-top: 1rem;
         }
 
         .btn {
           width: 100%;
         }
-      }
-    }
-
-    .skills .skill-item {
-      margin-bottom: 50px;
-      padding-right: 0;
-      padding-left: 0;
-
-      ul {
-        padding-left: 20px;
       }
     }
   }

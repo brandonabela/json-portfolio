@@ -1,9 +1,8 @@
 import React from 'react';
 import { Badge, Col, Container, Row } from 'react-bootstrap';
-import PageHeader from '../components/PageHeader';
 
-import './Skills.scss';
 import skills from '../data/skills.json';
+import PageHeader from '../components/PageHeader';
 
 
 function Skills() {
@@ -15,7 +14,7 @@ function Skills() {
         <Container>
           <Row>
             {skills.map((skill, index) =>
-              <Col sm={4} key={index}>
+              <Col md={4} key={index}>
                 <div className="skill-item">
                   {skill.icon &&
                     <div className="skill-icon text-center"> <i className={'bi ' + skill.icon}></i> </div>
@@ -29,12 +28,14 @@ function Skills() {
                     )}
                   </ul>
                 </div>
+
+                <div className="spacer" />
               </Col>
             )}
           </Row>
         </Container>
       </section>
-    </div >
+    </div>
   );
 }
 

@@ -17,8 +17,12 @@
   }
 
   .content-gutter {
-    margin-bottom: 2rem;
     padding: 0 $content-gutter;
+    margin-bottom: $content-padding;
+  }
+
+  .spacer {
+    margin-bottom: $content-padding;
   }
 
   section,
@@ -49,10 +53,6 @@
   }
 
   section {
-    p {
-      margin-bottom: 1rem;
-    }
-
     a {
       font-weight: 600;
 
