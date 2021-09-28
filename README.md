@@ -99,8 +99,8 @@ The ```profile.json``` file is used to populate the about page and certain detai
 
 The website customisation is primarily driven by two primary stylesheets;
 
-* ```styles/scheme.scss``` is used for changing colours and padding of content and section
-* ```styles/typography.scss``` is used for setting font sizes of text headings and paragraphs
+* ```styles/Scheme.scss``` is used for changing colours and padding of content and section
+* ```styles/Typography.scss``` is used for setting font sizes of text headings and paragraphs
 
 # Contributions
 
