@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 import './About.scss';
 import SectionTitle from '../components/SectionTitle';
-import experiences from '../data/experiences.json';
+import skills from '../data/skills.json';
 import profile from '../data/profile.json';
 import projects from '../data/projects.json';
-import skills from '../data/skills.json';
+import experiences from '../data/experiences.json';
 
 
 function About() {

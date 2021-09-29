@@ -1,0 +1,35 @@
+@import "../styles/Scheme.scss";
+
+.filter {
+  li {
+    display: inline-block;
+
+    margin-right: 0.5rem;
+
+    .btn {
+      padding: 0.275rem 0.875rem !important;
+
+      border-radius: 4px;
+    }
+
+    .active {
+      &:hover,
+      &:focus {
+        background: $primary;
+      }
+    }
+
+    .inactive {
+      color: $text-dark !important;
+      background: transparent;
+      border-color: transparent;
+
+      &:hover,
+      &:focus {
+        color: $text-dark !important;
+        background: rgba(0, 0, 0, 0.1);
+        border-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

@@ -5,9 +5,9 @@
       "Description 1."
     ],
     "skills": [
-      "Skills 1A",
-      "Skills 1B",
-      "Skills 1C"
+      "Skill 1A",
+      "Skill 1B",
+      "Skill 1C"
     ],
     "images": 1,
     "imageHeading": "Project",
@@ -19,7 +19,7 @@
       "Description 2."
     ],
     "skills": [
-      "Skills 2A"
+      "Skill 2A"
     ],
     "images": 1,
     "imageHeading": "Project",
@@ -31,10 +31,10 @@
       "Description 3."
     ],
     "skills": [
-      "Skills 3A",
-      "Skills 3B",
-      "Skills 3C",
-      "Skills 3D"
+      "Skill 3A",
+      "Skill 3B",
+      "Skill 3C",
+      "Skill 3D"
     ],
     "images": 1,
     "imageHeading": "Project",
@@ -46,8 +46,8 @@
       "Description 4."
     ],
     "skills": [
-      "Skills 4A",
-      "Skills 4B"
+      "Skill 4A",
+      "Skill 4B"
     ],
     "images": 1,
     "imageHeading": "Project",
