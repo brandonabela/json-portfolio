@@ -4,5 +4,6 @@
   "heading": "Biography Description [education], [Work Experience], [Portfolio], [skills] and [contact].",
   "skills": "Skills Description.",
   "projects": "Projects Description.",
-  "experience": "Experience Description."
+  "experience": "Experience Description.",
+  "notFound": "Not Found Description."
 }
