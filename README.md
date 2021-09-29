@@ -59,6 +59,7 @@ The ```profile.json``` file is used to populate the about page and certain detai
 |    skills    |   Skills Description   |      ✔️       |
 |   projects   |  Projects Description  |      ✔️       |
 |  experience  | Experience Description |      ✔️       |
+|   notFound   | Not Found Description  |      ✔️       |
 
 ### Education - ```educations.json```
 
