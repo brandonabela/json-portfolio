@@ -18,9 +18,7 @@
   }
 
   .carousel {
-    margin-right: $carousel-gutter;
     margin-bottom: 1.5rem;
-    margin-left: $carousel-gutter;
 
     .carousel-control-prev,
     .carousel-control-next {
@@ -65,19 +63,5 @@
         background-color: $text-dark;
       }
     }
-  }
-}
-
-@media only screen and(max-width: 1024px) {
-  .carousel {
-    margin-left: $content-gutter !important;
-    margin-right: $content-gutter !important;
-  }
-}
-
-@media only screen and(max-width: 768px) {
-  .carousel {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
   }
 }

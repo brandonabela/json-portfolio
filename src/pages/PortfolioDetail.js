@@ -64,17 +64,19 @@ function PortfolioDetail({ match }) {
           }
 
           {project.images > 0 &&
-            <Carousel>
-              {[...new Array(project.images)].map((_, i_index) =>
-                <Carousel.Item key={i_index}>
-                  <img
-                    className="d-block w-100"
-                    src={"./images/projects/" + project.imageHeading + String(i_index + 1).padStart(2, '0') + ".png"}
-                    alt={project.imageHeading + String(i_index + 1).padStart(2, '0')}
-                  />
-                </Carousel.Item>
-              )}
-            </Carousel>
+            <div className="media-gutter">
+              <Carousel>
+                {[...new Array(project.images)].map((_, i_index) =>
+                  <Carousel.Item key={i_index}>
+                    <img
+                      className="d-block w-100"
+                      src={"./images/projects/" + project.imageHeading + String(i_index + 1).padStart(2, '0') + ".png"}
+                      alt={project.imageHeading + String(i_index + 1).padStart(2, '0')}
+                    />
+                  </Carousel.Item>
+                )}
+              </Carousel>
+            </div>
           }
 
           {project.images > 0 &&

@@ -42,7 +42,7 @@ function Portfolio() {
                 skills.filter(s => s.title === filter)[0].technologies.includes(s)
               )
             )].flat().map((project, p_index) =>
-              <Col md={3} sm={6} key={p_index}>
+              <Col lg={3} md={4} sm={6} key={p_index}>
                 <Card>
                   <div className="card-img">
                     <Card.Img

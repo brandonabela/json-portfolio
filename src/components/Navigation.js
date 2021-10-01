@@ -26,17 +26,11 @@ function Navigation() {
       <Navbar collapseOnSelect fixed="top" expand="lg">
         <Container>
           <Navbar.Brand>
-            {socials.map((social, index) => {
-              return social.link !== "" ?
-                <a
-                  key={index}
-                  href={social.link}
-                >
-                  <i className={"bi bi-" + social.name}></i>
-                </a>
-                :
-                ""
-            })}
+            {socials.filter(social => social.link !== "").map((social, s_index) =>
+              <a key={s_index} href={social.link}>
+                <i className={"bi bi-" + social.name}></i>
+              </a>
+            )}
 
             <a href={"mailto:" + profile.email}>
               <i className="bi bi-envelope-fill"></i>
