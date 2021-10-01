@@ -1,53 +1,98 @@
 [
   {
+    "start": "Start 1",
+    "end": "End 1",
     "name": "Name 1",
     "description": [
-      "Description 1."
+      "Description 1A.",
+      "Description 1B."
     ],
-    "skills": [
-      "Skill 1A",
-      "Skill 1B",
-      "Skill 1C"
+    "technologies": [
+      "Technology 1A",
+      "Technology 1B",
+      "Technology 1C"
+    ],
+    "buttons": [
+      {
+        "text": "Button 1A",
+        "link": "https://www.google.com/"
+      },
+      {
+        "text": "Button 1B",
+        "link": "https://www.google.com/"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=H05h2MIvo7Y",
+      "https://www.youtube.com/watch?v=i0MTCXgil1M"
     ],
     "images": 1,
     "imageHeading": "Project",
     "overview": true
   },
   {
+    "start": "Start 2",
+    "end": "End 2",
     "name": "Name 2",
     "description": [
       "Description 2."
     ],
-    "skills": [
-      "Skill 2A"
+    "technologies": [
+      "Technology 2A"
     ],
+    "buttons": [
+      {
+        "text": "Button 2A",
+        "link": "https://www.google.com/"
+      }
+    ],
+    "videos": [],
     "images": 1,
     "imageHeading": "Project",
     "overview": true
   },
   {
+    "start": "Start 3",
+    "end": "End 3",
     "name": "Name 3",
     "description": [
       "Description 3."
     ],
-    "skills": [
-      "Skill 3A",
-      "Skill 3B",
-      "Skill 3C",
-      "Skill 3D"
+    "technologies": [
+      "Technology 3A",
+      "Technology 3B",
+      "Technology 3C",
+      "Technology 3D"
+    ],
+    "buttons": [],
+    "videos": [
+      "https://www.youtube.com/watch?v=H05h2MIvo7Y",
+      "https://www.youtube.com/watch?v=i0MTCXgil1M"
     ],
     "images": 1,
     "imageHeading": "Project",
     "overview": true
   },
   {
+    "start": "Start 4",
+    "end": "End 4",
     "name": "Name 4",
     "description": [
       "Description 4."
     ],
-    "skills": [
-      "Skill 4A",
-      "Skill 4B"
+    "technologies": [
+      "Technology 4A",
+      "Technology 4B"
+    ],
+    "buttons": [
+      {
+        "text": "Button 4A",
+        "link": "https://www.google.com/"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=H05h2MIvo7Y",
+      "https://www.youtube.com/watch?v=i0MTCXgil1M"
     ],
     "images": 1,
     "imageHeading": "Project",

@@ -1,0 +1,83 @@
+@import "../styles/Scheme.scss";
+
+.portfolio-item {
+  h4 {
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    display: inline-block !important;
+
+    margin-right: 1rem !important;
+  }
+
+  .carousel {
+    margin-right: $carousel-gutter;
+    margin-bottom: 1.5rem;
+    margin-left: $carousel-gutter;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 10%;
+
+      color: #FFF;
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+        background-color: $text-dark;
+        background-size: 25px;
+      }
+
+      .sr-only {
+        display: none;
+      }
+    }
+
+    .carousel-indicators {
+      bottom: -2rem;
+
+      li {
+        box-sizing: content-box;
+        width: 30px;
+        height: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+
+        cursor: pointer;
+
+        opacity: 0.5;
+        border-radius: 2px;
+        background-color: $line;
+        background-clip: padding-box;
+      }
+
+      .active {
+        background-color: $text-dark;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  .carousel {
+    margin-left: $content-gutter !important;
+    margin-right: $content-gutter !important;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .carousel {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
