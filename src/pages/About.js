@@ -63,8 +63,8 @@ function About() {
                   <h5 style={{ marginTop: skill.icon ? '-2rem' : '0' }}> {skill.title} </h5>
 
                   <ul>
-                    {skill.skills.slice(0, 5).map((skill, s_index) =>
-                      <li key={s_index}> <span> ✔ </span> {skill} </li>
+                    {skill.technologies.slice(0, 5).map((technology, t_index) =>
+                      <li key={t_index}> <span> ✔ </span> {technology} </li>
                     )}
                   </ul>
                 </div>
@@ -109,8 +109,8 @@ function About() {
                     </Card.Title>
 
                     <Card.Text>
-                      {project.skills.map((skill, s_index) =>
-                        <Badge pill key={s_index}> {skill} </Badge>
+                      {project.technologies.map((technology, t_index) =>
+                        <Badge pill key={t_index}> {technology} </Badge>
                       )}
                     </Card.Text>
                   </Card.Body>

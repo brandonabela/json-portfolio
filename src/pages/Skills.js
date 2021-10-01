@@ -23,8 +23,8 @@ function Skills() {
                   <h5 style={{ marginTop: skill.icon ? '-2rem' : '0' }}> {skill.title} </h5>
 
                   <ul>
-                    {skill.skills.map((skill, s_index) =>
-                      <Badge pill key={s_index}> {skill} </Badge>
+                    {skill.technologies.map((technology, t_index) =>
+                      <Badge pill key={t_index}> {technology} </Badge>
                     )}
                   </ul>
                 </div>

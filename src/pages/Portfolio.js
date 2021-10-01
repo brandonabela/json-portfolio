@@ -38,8 +38,8 @@ function Portfolio() {
 
           <Row className="justify-content-md-center text-center">
             {[filter === "All" ? projects : projects.filter(p =>
-              p.skills.some(s =>
-                skills.filter(s => s.title === filter)[0].skills.includes(s)
+              p.technologies.some(s =>
+                skills.filter(s => s.title === filter)[0].technologies.includes(s)
               )
             )].flat().map((project, p_index) =>
               <Col md={3} sm={6} key={p_index}>
@@ -66,8 +66,8 @@ function Portfolio() {
                     </Card.Title>
 
                     <Card.Text>
-                      {project.skills.map((skill, s_index) =>
-                        <Badge pill key={s_index}> {skill} </Badge>
+                      {project.technologies.map((technology, t_index) =>
+                        <Badge pill key={t_index}> {technology} </Badge>
                       )}
                     </Card.Text>
                   </Card.Body>

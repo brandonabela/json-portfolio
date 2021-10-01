@@ -3,30 +3,30 @@
     "title": "Title 1",
     "icon": "bi-file-earmark-code-fill",
     "overview": true,
-    "skills": [
-      "Skill 1A",
-      "Skill 1B",
-      "Skill 1C",
-      "Skill 1D"
+    "technologies": [
+      "Technology 1A",
+      "Technology 1B",
+      "Technology 1C",
+      "Technology 1D"
     ]
   },
   {
     "title": "Title 2",
     "icon": "bi-file-earmark-code-fill",
     "overview": true,
-    "skills": [
-      "Skill 2A",
-      "Skill 2B",
-      "Skill 2C"
+    "technologies": [
+      "Technology 2A",
+      "Technology 2B",
+      "Technology 2C"
     ]
   },
   {
     "title": "Title 3",
     "icon": "bi-file-earmark-code-fill",
     "overview": true,
-    "skills": [
-      "Skill 3A",
-      "Skill 3B"
+    "technologies": [
+      "Technology 3A",
+      "Technology 3B"
     ]
   }
 ]

@@ -22,7 +22,7 @@
   }
 
   .spacer {
-    margin-bottom: $content-padding;
+    padding-bottom: $content-padding;
   }
 
   section,
@@ -56,7 +56,7 @@
     a {
       font-weight: 600;
 
-      display: inline-block;
+      display: inline-flex;
 
       text-decoration: none;
 
