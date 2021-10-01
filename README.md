@@ -36,7 +36,7 @@ A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-pag
 
 ## Template Instructions
 
-This section covers every JSON file that is used by the website to generate the portfolio website. The number of entries in ```educations.json``` and ```educations.json``` can be adjusted as long as the same structure is kept.
+This section covers every JSON file that is used by the website to generate the portfolio website. The number of entries in ```educations.json```, ```experiences.json```, ```skills.json``` and ```projects.json``` can be adjusted as long as the same structure is kept.
 
 ### Social Links - ```socials.json```
 
@@ -85,7 +85,7 @@ The ```profile.json``` file is used to populate the about page and certain detai
 |   location   |  Institution Location  |      ✔️       |
 | description  | Employment Description |      ❌       |
 |   bullets    | Employment Highlights  |      ❌       |
-|    skills    |      Skills Used       |      ❌       |
+| technologies |   Technologies Used    |      ❌       |
 
 ### Skills - ```skills.json```
 
@@ -94,7 +94,22 @@ The ```profile.json``` file is used to populate the about page and certain detai
 |    title     |  Skill Group Name  |      ✔️       |
 |     icon     |  Skill Group Icon  |      ✔️       |
 |   overview   | Show in About Page |      ✔️       |
-|    skills    |       Skills       |      ✔️       |
+| technologies |    Technologies    |      ✔️       |
+
+### Projects - ```projects.json```
+
+| **Property** |      **Description**      | **Required** |
+| :----------: | :-----------------------: | :----------: |
+|    start     |        Start Date         |      ✔️       |
+|     end      |         End Date          |      ✔️       |
+|     name     |       Project Name        |      ✔️       |
+| description  |    Project Description    |      ❌       |
+| technologies |       Technologies        |      ✔️       |
+|   buttons    |       Project Links       |      ❌       |
+|    videos    |      You Tube Links       |      ❌       |
+|    images    |     Amount of Images      |      ✔️       |
+| imageHeading | Project Image Suffix Name |      ✔️       |
+|   overview   |    Show in About Page     |      ✔️       |
 
 ## Customisation
 
