@@ -36,7 +36,7 @@ A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-pag
 
 ## Template Instructions
 
-This section covers every JSON file that is used by the website to generate the portfolio website. The number of entries in ```educations.json```, ```experiences.json```, ```skills.json``` and ```projects.json``` can be adjusted as long as the same structure is kept.
+This section covers every JSON file that is used by the website to generate the portfolio website. The number of entries in ```educations.json```, ```experiences.json```, ```skills.json``` and ```projects.json``` can be adjusted as long as the same structure is kept. 
 
 ### Social Links - ```socials.json```
 
@@ -49,7 +49,7 @@ The ```socials.json``` file consists of a predefined list of social media links 
 
 ### Profile - ```profile.json```
 
-The ```profile.json``` file is used to populate the about page and certain details are also shared to other pages. The biography description is used to provide an introduction to the portfolio with the support of links through the use of square brackets, which supports the **education**, **work**, **skills**, **portfolio** and **contact**.
+The ```profile.json``` file is used to populate the about page and certain details are also shared to other pages. The biography description is used to provide an introduction to the portfolio with the support of links through the use of square brackets, which supports the **education**, **work**, **skills**, **portfolio** and **contact**. A profile picture is required and be in the following location **```public/images/ProfilePicture.png```**.
 
 The contact page makes use of Formspree ID, which requires a <a href="https://formspree.io/login" target="_blank">Formspree</a> account and creating a new form (**New Form**). The form id is found in the URL which has the following structure **```https://formspree.io/forms/########/```** where the **#** values represent the form ID.
 
@@ -100,6 +100,8 @@ The contact page makes use of Formspree ID, which requires a <a href="https://fo
 | technologies |    Technologies    |      ✔️       |
 
 ### Projects - ```projects.json```
+
+Any project images should be stored in **```public/images/projects/```** where the filename convention of these images is ```imageHeading##.png```. The ```imageHeading``` must be unique for every project and ```##``` represent the index starting from 1 padded with zeros such as; **01**, **02**, **03**, **etc**.
 
 | **Property** |      **Description**      | **Required** |
 | :----------: | :-----------------------: | :----------: |
