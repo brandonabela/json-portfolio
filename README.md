@@ -2,7 +2,7 @@
 
 A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-page portfolio site from several JSON files with a central customisation functionality and deployment pipeline.
 
-<a href="http://brandonabela.github.io/json-portfolio" target="_blank">DEMO</a> | <a href="https://brandonabela.github.io/" target="_blank">My portfolio</a>
+<a href="http://brandonabela.github.io/json-portfolio" target="_blank">DEMO</a>
 
 ## Features
 
@@ -51,6 +51,8 @@ The ```socials.json``` file consists of a predefined list of social media links 
 
 The ```profile.json``` file is used to populate the about page and certain details are also shared to other pages. The biography description is used to provide an introduction to the portfolio with the support of links through the use of square brackets, which supports the **education**, **work**, **skills**, **portfolio** and **contact**.
 
+The contact page makes use of Formspree ID, which requires a <a href="https://formspree.io/login" target="_blank">Formspree</a> account and creating a new form (**New Form**). The form id is found in the URL which has the following structure **```https://formspree.io/forms/########/```** where the **#** values represent the form ID.
+
 | **Property** |    **Description**     | **Required** |
 | :----------: | :--------------------: | :----------: |
 |     name     |       Full name        |      ✔️       |
@@ -60,6 +62,7 @@ The ```profile.json``` file is used to populate the about page and certain detai
 |   projects   |  Projects Description  |      ✔️       |
 |  experience  | Experience Description |      ✔️       |
 |   notFound   | Not Found Description  |      ✔️       |
+| formspreeId  |      Formspree ID      |      ✔️       |
 
 ### Education - ```educations.json```
 
