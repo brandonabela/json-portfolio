@@ -1,0 +1,58 @@
+@import "../styles/Scheme.scss";
+
+.contact {
+  img {
+    max-height: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .bubble {
+    margin-bottom: 3rem;
+    padding: 3rem;
+
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+
+    h6 {
+      font-weight: 700;
+
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: $primary !important;
+    }
+
+    .socialLinks {
+      a {
+        font-size: 1.25rem;
+
+        width: 36px;
+        height: 36px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        text-align: center !important;
+
+        color: #FFFFFF !important;
+        border-radius: 50%;
+        background-color: $primary;
+
+        i {
+          margin: auto;
+        }
+
+        &:focus,
+        &:hover {
+          background-color: $primary-dark;
+        }
+      }
+    }
+  }
+
+  form {
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}
