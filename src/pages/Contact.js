@@ -34,7 +34,7 @@ function Contact() {
             </div>
           </div>
 
-          <form action={"//formsubmit.io/" + profile.email} method="POST">
+          <form action={"//formspree.io/" + profile.email} method="POST">
             <h3> Get In Touch </h3>
 
             <Row>
