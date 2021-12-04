@@ -24,19 +24,19 @@ A ReactJs and Bootstrap 5 framework website that dynamically creates a multi-pag
 
 ### Deploy Website:
 
-1. In ```package.json``` change ```"name": "json-portfolio"``` to ```"name": "github-username"```
-2. In ```package-lock.json``` change ```"name": "json-portfolio"``` to ```"name": "github-username"``` for both the ```root``` and ```packages```
-3. In ```package-lock.json``` change ```"homepage": "."``` to ```"homepage": "https://github-username.github.io/"```
-4. In ```public/index.html``` change ```<title> JSON Portfolio </title>``` to ```<title> Your Name | Portfolio </title>```
-5. In ```public/index.html``` change ```<meta name="description" content="..." />``` to ```<meta name="description" content="Website Description" />```
-6. Fork Repository with ```github-username.github.io``` as your repository name
+1. Fork Repository with ```github-username.github.io``` as your repository name
+2. In ```package.json``` change ```"name": "json-portfolio"``` to ```"name": "github-username"```
+3. In ```package-lock.json``` change ```"name": "json-portfolio"``` to ```"name": "github-username"``` for both the ```root``` and ```packages```
+4. In ```package-lock.json``` change ```"homepage": "."``` to ```"homepage": "https://github-username.github.io/"```
+5. In ```public/index.html``` change ```<title> JSON Portfolio </title>``` to ```<title> Your Name | Portfolio </title>```
+6. In ```public/index.html``` change ```<meta name="description" content="..." />``` to ```<meta name="description" content="Website Description" />```
 7. Modify the JSON files to reflect your details and upload any necessary images
 8. Commit the files on the forked repository
 9. In Github access the ```repository settings > pages > sources``` and select ```gh-pages``` with ```/ (root)``` folder and then click ```save```
 
 ## Template Instructions
 
-This section covers every JSON file that is used by the website to generate the portfolio website. The number of entries in ```educations.json```, ```experiences.json```, ```skills.json``` and ```projects.json``` can be adjusted as long as the same structure is kept. 
+This section covers every JSON file that is used by the website to generate the portfolio website. The number of entries in ```educations.json```, ```experiences.json```, ```skills.json``` and ```projects.json``` can be adjusted as long as the same structure is kept.
 
 ### Social Links - ```socials.json```
 
